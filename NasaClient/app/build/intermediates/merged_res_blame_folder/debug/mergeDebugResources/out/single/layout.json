@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_main.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_news.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_news.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_planets.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_planets.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_onboarding01.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_onboarding01.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_setting.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_setting.xml"
+    },
+    {
+        "merged": "com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_with_nav.xml",
+        "source": "com.example.nasaclient.app-main-67:/layout/activity_with_nav.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_signup.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_login.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_edit_profile.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_with_nav.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_with_nav.xml"
+    }
+]

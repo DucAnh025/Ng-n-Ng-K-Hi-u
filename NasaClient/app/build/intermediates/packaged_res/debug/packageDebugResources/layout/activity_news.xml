@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:padding="16dp">
+    android:padding="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <!-- Breaking News Title -->
@@ -11,18 +12,20 @@
         android:id="@+id/tvBreakingNews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Breaking news"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Breaking news"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnGoToNews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to News"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:text="Go to News" />
 
 
     <!-- Search Bar -->
@@ -30,12 +33,14 @@
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search something"
-        android:drawableStart="@drawable/ic_search"
-        android:background="@drawable/rounded_edittext"
-        android:padding="12dp"
         android:layout_below="@id/tvBreakingNews"
-        android:layout_marginTop="16dp" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/ic_search"
+        android:hint="Search something"
+        android:padding="12dp" />
 
     <!-- News List -->
     <!--  <androidx.recyclerview.widget.RecyclerView
@@ -44,50 +49,4 @@
           android:layout_height="wrap_content"
           android:layout_below="@id/etSearch"
           android:layout_marginTop="16dp" /> -->
-
-      <!-- Bottom Navigation -->
-    <LinearLayout
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
-
-        <!-- Home Icon -->
-        <ImageView
-            android:id="@+id/ivHome"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_home"
-            android:contentDescription="Home" />
-
-        <!-- Planets Icon -->
-        <ImageView
-            android:id="@+id/ivPlanets"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_planets"
-            android:layout_marginStart="24dp"
-            android:contentDescription="Planets" />
-
-        <!-- News Icon (Active) -->
-        <ImageView
-            android:id="@+id/ivNews"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_news"
-            android:layout_marginStart="24dp"
-            android:contentDescription="News" />
-
-        <!-- Settings Icon -->
-        <ImageView
-            android:id="@+id/ivSettings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_settings"
-            android:layout_marginStart="24dp"
-            android:contentDescription="Settings" />
-    </LinearLayout>
-
 </RelativeLayout>

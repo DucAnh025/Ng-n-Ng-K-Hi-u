@@ -28,20 +28,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.NasaClient" >
         <activity
-            android:name="com.example.nasaclient.LoginActivity"
-            android:label="Login"
-            android:theme="@style/Theme.NasaClient" />
+            android:name="com.example.nasaclient.HomeActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.nasaclient.EditProfileActivity"
-            android:label="Edit Profile"
+            android:name="com.example.nasaclient.PlanetActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.SettingActivity"
+            android:exported="false"
+            android:label="Setting"
             android:theme="@style/Theme.NasaClient" />
         <activity
             android:name="com.example.nasaclient.NewsActivity"
+            android:exported="false"
             android:label="News"
-            android:theme="@style/Theme.NasaClient" />
-        <activity
-            android:name="com.example.nasaclient.SettingActivity"
-            android:label="Setting"
             android:theme="@style/Theme.NasaClient" />
         <activity
             android:name="com.example.nasaclient.MainActivity"
@@ -54,6 +54,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.nasaclient.LoginActivity"
+            android:exported="false"
+            android:label="Login"
+            android:theme="@style/Theme.NasaClient" />
+        <activity
+            android:name="com.example.nasaclient.EditProfileActivity"
+            android:exported="false"
+            android:label="Edit Profile"
+            android:theme="@style/Theme.NasaClient" />
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
@@ -75,6 +85,13 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

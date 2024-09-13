@@ -39,7 +39,7 @@ drawable ic_username
 drawable rounded_button_black
 drawable rounded_button_white
 drawable rounded_edittext
-id bottom_navigation
+id bottomNavigationView
 id btnGoToNews
 id btnSetting
 id btnSignIn
@@ -47,6 +47,7 @@ id btnSignUpFacebook
 id btnSignUpGoogle
 id btn_more
 id btn_save_changes
+id container
 id etConfirmPassword
 id etEmail
 id etPassword
@@ -55,13 +56,14 @@ id et_email
 id et_full_name
 id et_phone_number
 id et_username
+id home
 id idHome
-id ivHome
-id ivNews
-id ivPlanets
 id ivProfileIcon
-id ivSettings
+id linearLayout
+id news
+id planet
 id profile_image
+id setting
 id tvBreakingNews
 id tvCosmicDust
 id tvDensity
@@ -81,8 +83,11 @@ layout activity_login
 layout activity_main
 layout activity_news
 layout activity_onboarding01
+layout activity_planets
 layout activity_setting
 layout activity_signup
+layout activity_with_nav
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

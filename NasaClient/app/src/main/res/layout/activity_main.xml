@@ -1,69 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idHome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
-    android:padding="16dp"
-    android:id="@+id/idHome">
+    android:padding="0dp">
 
-
-    <!-- Location -->
     <TextView
         android:id="@+id/tvLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Moon, Solar System"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Moon, Solar System"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
     <!-- Profile Icon -->
     <ImageView
         android:id="@+id/ivProfileIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_profile"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_profile" />
 
     <!-- Notification Badge -->
     <TextView
         android:id="@+id/tvNotificationBadge"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:background="@drawable/circle_notification"
-        android:text="3"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:gravity="center"
         android:layout_alignTop="@id/ivProfileIcon"
         android:layout_alignEnd="@id/ivProfileIcon"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circle_notification"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
 
     <!-- Welcome Text -->
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
         android:text="Hi, Hendrix"
         android:textColor="#FFFFFF"
         android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_below="@id/tvLocation"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:textStyle="bold" />
 
     <!-- Data Information -->
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_below="@id/tvWelcome"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tvSolarRadiation"
@@ -103,54 +104,10 @@
             android:layout_height="wrap_content"
             android:text="Density: 1.09 p/cm³"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
+
+
     </LinearLayout>
 
-    <!-- Bottom Navigation -->
-    <LinearLayout
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#5F5F5F"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <!-- Home Icon -->
-        <ImageView
-            android:id="@+id/ivHome"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="Home"
-            android:src="@drawable/ic_home" />
-
-        <!-- Planets Icon -->
-        <ImageView
-            android:id="@+id/ivPlanets"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="24dp"
-            android:contentDescription="Planets"
-            android:src="@drawable/ic_planets" />
-
-        <!-- News Icon -->
-        <ImageView
-            android:id="@+id/ivNews"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="24dp"
-            android:contentDescription="News"
-            android:src="@drawable/ic_news" />
-
-        <!-- Settings Icon -->
-        <ImageView
-            android:id="@+id/ivSettings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="24dp"
-            android:contentDescription="Settings"
-            android:src="@drawable/ic_settings" />
-    </LinearLayout>
 
 </RelativeLayout>

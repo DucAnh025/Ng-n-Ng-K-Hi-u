@@ -47,26 +47,18 @@
             android:layout_marginBottom="12dp" />
 
         <!-- Password Input -->
+
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_password"
             android:hint="Password"
-            android:drawableStart="@drawable/ic_password"
             android:inputType="textPassword"
-            android:background="@drawable/rounded_edittext"
-            android:padding="12dp"
-            android:layout_marginBottom="8dp" />
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint=Confirm Password"
-            android:drawableStart="@drawable/ic_password"
-            android:inputType="textPassword"
-            android:background="@drawable/rounded_edittext"
-            android:padding="12dp"
-            android:layout_marginBottom="8dp" />
+            android:padding="12dp" />
+
 
 
         <!-- Forgot Password Text -->

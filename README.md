@@ -13,7 +13,7 @@
 
 ### Team Contributions:
 - **Bui Le Duc Anh**: [Tasks updating...]
-- **Bui Quang Trung**: [Tasks updating...]
+- **Bui Quang Trung**: [Some initial app ui design, nav bar intergration]
 - **Hoang Kim Thanh**: [Tasks updating...]
 - **Nguyen Xuan Hong Vu**: [Tasks updating...]
 - **Phan Viet Tu**: [Tasks updating...]

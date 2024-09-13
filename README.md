@@ -1,14 +1,20 @@
-# Mobile Application Development Project
+# NASA Client - Mobile Application Development Project
 
-Group ID: 04
-Project Name: Nasa Client
+## Group ID: 04
 
-Members: 5
-- Bui Le Duc Anh
-- Bui Quang Trung
-- Hoang Kim Thanh
-- Nguyen Xuan Hong Vu
-- Phan Viet Tu
+### Project Name: NASA Client
 
-Task:
-- Updating...
+### Group Members:
+- Bui Le Duc Anh (22BI13010) (Leader)
+- Bui Quang Trung (22BI13434)
+- Hoang Kim Thanh (22BI13407)
+- Nguyen Xuan Hong Vu (22BI13479)
+- Phan Viet Tu (22BI13443)
+
+### Team Contributions:
+- **Bui Le Duc Anh**: [Tasks updating...]
+- **Bui Quang Trung**: [Tasks updating...]
+- **Hoang Kim Thanh**: [Tasks updating...]
+- **Nguyen Xuan Hong Vu**: [Tasks updating...]
+- **Phan Viet Tu**: [Tasks updating...]
+

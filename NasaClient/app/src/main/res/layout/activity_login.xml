@@ -57,6 +57,17 @@
             android:background="@drawable/rounded_edittext"
             android:padding="12dp"
             android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=Confirm Password"
+            android:drawableStart="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
 
         <!-- Forgot Password Text -->
         <TextView

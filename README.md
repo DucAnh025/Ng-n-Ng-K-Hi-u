@@ -18,3 +18,8 @@
 - **Nguyen Xuan Hong Vu**: [Tasks updating...]
 - **Phan Viet Tu**: [Tasks updating...]
 
+### Initial UI App Design
+
+This is our initial UI app design:
+
+![Initial UI Design](demo_app.png)

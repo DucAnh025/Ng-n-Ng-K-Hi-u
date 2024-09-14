@@ -1,10 +1,10 @@
-#Sat Sep 14 02:34:12 ICT 2024
-base.0=/Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.3=/Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.4=/Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
-base.5=/Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Sat Sep 14 14:06:13 ICT 2024
+base.0=D\:\\D-Downloads\\Nasa-Client\\NasaClient\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\D-Downloads\\Nasa-Client\\NasaClient\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=D\:\\D-Downloads\\Nasa-Client\\NasaClient\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=D\:\\D-Downloads\\Nasa-Client\\NasaClient\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.4=D\:\\D-Downloads\\Nasa-Client\\NasaClient\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.5=D\:\\D-Downloads\\Nasa-Client\\NasaClient\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

@@ -11,6 +11,7 @@ drawable background_image
 drawable background_moon
 drawable circle_background
 drawable circle_notification
+drawable earth
 drawable ic_arrow_right
 drawable ic_changepassword
 drawable ic_edit_profile
@@ -36,6 +37,7 @@ drawable ic_search
 drawable ic_security
 drawable ic_settings
 drawable ic_username
+drawable rounded_button
 drawable rounded_button_black
 drawable rounded_button_white
 drawable rounded_edittext
@@ -56,14 +58,17 @@ id et_email
 id et_full_name
 id et_phone_number
 id et_username
+id exploreButton
 id home
 id idHome
 id ivProfileIcon
 id linearLayout
 id news
 id planet
+id planetImage
 id profile_image
 id setting
+id titleText
 id tvBreakingNews
 id tvCosmicDust
 id tvDensity

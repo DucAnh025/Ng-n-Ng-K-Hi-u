@@ -2,139 +2,137 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
     android:padding="16dp"
     android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center">
+        android:orientation="vertical">
 
-        <!-- Title -->
+        <!-- Button aligned to the top-left -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_gravity="start"
+            android:background="@drawable/back_button" /> <!-- Align to the left -->
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Profile Image" />
+
+        <!-- Full Name Input -->
         <TextView
-            android:id="@+id/tvLoginTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login Account"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:text="Full Name"
             android:textColor="#000000"
-            android:layout_marginBottom="8dp" />
-
-        <!-- Subtitle -->
-        <TextView
-            android:id="@+id/tvLoginSubtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Please login with registered account"
             android:textSize="14sp"
-            android:textColor="#777777"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="Hendrix"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:text="Hendrix"
+            android:textSize="16sp" />
+
+        <!-- Username Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_username"
+            android:hint="hendrix"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:text="hendrix"
+            android:textSize="16sp" />
+
+        <!-- Phone Number Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="0120000000"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:text="0120000000"
+            android:textSize="16sp" />
 
         <!-- Email Input -->
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email or Phone Number"
-            android:drawableStart="@drawable/ic_email"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/rounded_edittext"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
-
-        <!-- Password Input -->
-
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/rounded_edittext"
-            android:drawableStart="@drawable/ic_password"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:padding="12dp" />
-
-
-
-        <!-- Forgot Password Text -->
         <TextView
-            android:id="@+id/tvForgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot Password?"
-            android:textSize="14sp"
-            android:textColor="#777777"
-            android:layout_gravity="end"
-            android:layout_marginBottom="24dp" />
-
-
-        <!-- Sign In Button -->
-
-        <!-- Alternative Sign In Options -->
-        <Button
-            android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:background="@drawable/rounded_button_black"
-            android:text="Sign In"
-            android:textColor="#FFFFFF" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Or using other method"
-            android:textSize="14sp"
-            android:textColor="#777777"
-            android:layout_marginBottom="12dp" />
-
-        <!-- Google Sign Up Button -->
-        <Button
-            android:id="@+id/btnSignUpGoogle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:background="@drawable/rounded_button_white"
-            android:text="Sign Up with Google"
-            android:textColor="#000000" />
-
-        <!-- Facebook Sign Up Button -->
-        <Button
-            android:id="@+id/btnSignUpFacebook"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign Up with Facebook"
+            android:text="Email"
             android:textColor="#000000"
-            android:background="@drawable/rounded_button_white"
-            android:layout_marginBottom="24dp" />
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
 
-        <!-- Sign Up Option -->
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="demo@email.com"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:text="demo@email.com"
+            android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Don't have an account?"
-                android:textSize="14sp"
-                android:textColor="#777777"
-                android:layout_marginRight="4dp" />
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_button_black"
+            android:padding="12dp"
+            android:text="Save Changes"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/tvSignUp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Signup"
-                android:textSize="14sp"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-        </LinearLayout>
     </LinearLayout>
+
 </ScrollView>

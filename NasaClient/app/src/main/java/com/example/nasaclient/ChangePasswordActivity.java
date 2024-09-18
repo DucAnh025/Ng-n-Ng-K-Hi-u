@@ -1,54 +1,33 @@
 package com.example.nasaclient;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.activity.ComponentActivity;
 
-public class ChangePasswordActivity extends AppCompatActivity {
-
-    private EditText newPasswordEditText;
-    private EditText confirmPasswordEditText;
-    private Button saveChangesButton;
-    private Button backButton;
-    private TextView titleTextView;
-
+public class ChangePasswordActivity extends ComponentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
 
-        // Initialize UI elements
-        newPasswordEditText = findViewById(R.id.newPassword);
-        confirmPasswordEditText = findViewById(R.id.confirmPassword);
-        saveChangesButton = findViewById(R.id.btn_save_changes);
-        backButton = findViewById(R.id.button);
-        titleTextView = findViewById(R.id.titleText);
+        Button btn_save_changes_pass = findViewById(R.id.btn_save_changes);
+        btn_save_changes_pass.setOnClickListener(v -> {
+            Intent intent = new Intent(ChangePasswordActivity.this,SettingActivity.class);
+            startActivity(intent);
+        });
+        Button btnback = findViewById(R.id.btnback);
+        btnback.setOnClickListener(new View.OnClickListener() {
 
-        // Set up event listeners
-        saveChangesButton.setOnClickListener(v -> handleSaveChanges());
-        backButton.setOnClickListener(v -> finish()); // Close the activity when back button is pressed
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(ChangePasswordActivity.this,SettingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
-    private void handleSaveChanges() {
-        String newPassword = newPasswordEditText.getText().toString();
-        String confirmPassword = confirmPasswordEditText.getText().toString();
-
-        if (newPassword.isEmpty() || confirmPassword.isEmpty()) {
-            // Show error message if any field is empty
-            // You can use Toast or Snackbar here
-            return;
-        }
-
-        if (!newPassword.equals(confirmPassword)) {
-            // Show error message if passwords do not match
-            // You can use Toast or Snackbar here
-            return;
-        }
-
-        // Handle the password change logic here
-        // For example, send the new password to your server or save it locally
-    }
 }

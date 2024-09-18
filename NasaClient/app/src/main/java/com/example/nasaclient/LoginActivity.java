@@ -17,7 +17,7 @@ public class LoginActivity extends ComponentActivity {
         // Set the click listener for the Sign In button
         signInButton.setOnClickListener(v -> {
             // Create an intent to navigate to EditProfileActivity
-            Intent intent = new Intent(LoginActivity.this, EditProfileActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         });
     }

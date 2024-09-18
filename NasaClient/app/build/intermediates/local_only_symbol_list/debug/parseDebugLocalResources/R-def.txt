@@ -61,6 +61,7 @@ id Searchlanguage
 id Searchlanguagelayout
 id Term
 id alreadyHaveAccountText
+id backButton
 id bottomNavigationView
 id btnGoToNews
 id btnSignIn
@@ -77,6 +78,7 @@ id dot1
 id dot2
 id dot3
 id dotIndicator
+id earthExploreButton
 id etConfirmPassword
 id etEmail
 id etPassword
@@ -85,7 +87,6 @@ id et_email
 id et_full_name
 id et_phone_number
 id et_username
-id exploreButton
 id home
 id idHome
 id imageCard
@@ -106,6 +107,9 @@ id newPasswordLayout
 id news
 id planet
 id planetImage
+id planetImageView
+id planetInfoTextView
+id planetNameTextView
 id profile_image
 id saturnExploreButton
 id saturnImage
@@ -141,6 +145,7 @@ id venusTitleText
 id viewPager
 layout activity_change_password
 layout activity_edit_profile
+layout activity_help_and_support
 layout activity_language
 layout activity_legal_and_policies
 layout activity_login
@@ -149,6 +154,7 @@ layout activity_news
 layout activity_notification
 layout activity_notification_setting
 layout activity_onboarding01
+layout activity_planet_info
 layout activity_planets
 layout activity_security
 layout activity_setting

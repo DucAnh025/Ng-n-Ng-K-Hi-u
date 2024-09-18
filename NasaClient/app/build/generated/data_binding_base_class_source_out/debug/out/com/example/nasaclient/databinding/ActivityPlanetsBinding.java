@@ -22,7 +22,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final Button exploreButton;
+  public final Button earthExploreButton;
 
   @NonNull
   public final Button marsExploreButton;
@@ -84,7 +84,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
   @NonNull
   public final TextView venusTitleText;
 
-  private ActivityPlanetsBinding(@NonNull ScrollView rootView, @NonNull Button exploreButton,
+  private ActivityPlanetsBinding(@NonNull ScrollView rootView, @NonNull Button earthExploreButton,
       @NonNull Button marsExploreButton, @NonNull ImageView marsImage,
       @NonNull TextView marsTitleText, @NonNull Button mercuryExploreButton,
       @NonNull ImageView mercuryImage, @NonNull TextView mercuryTitleText,
@@ -96,7 +96,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
       @NonNull TextView uranusTitleText, @NonNull Button venusExploreButton,
       @NonNull ImageView venusImage, @NonNull TextView venusTitleText) {
     this.rootView = rootView;
-    this.exploreButton = exploreButton;
+    this.earthExploreButton = earthExploreButton;
     this.marsExploreButton = marsExploreButton;
     this.marsImage = marsImage;
     this.marsTitleText = marsTitleText;
@@ -146,9 +146,9 @@ public final class ActivityPlanetsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.exploreButton;
-      Button exploreButton = ViewBindings.findChildViewById(rootView, id);
-      if (exploreButton == null) {
+      id = R.id.earthExploreButton;
+      Button earthExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (earthExploreButton == null) {
         break missingId;
       }
 
@@ -272,11 +272,11 @@ public final class ActivityPlanetsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlanetsBinding((ScrollView) rootView, exploreButton, marsExploreButton,
-          marsImage, marsTitleText, mercuryExploreButton, mercuryImage, mercuryTitleText,
-          neptuneExploreButton, neptuneImage, neptuneTitleText, planetImage, saturnExploreButton,
-          saturnImage, saturnTitleText, titleText, uranusExploreButton, uranusImage,
-          uranusTitleText, venusExploreButton, venusImage, venusTitleText);
+      return new ActivityPlanetsBinding((ScrollView) rootView, earthExploreButton,
+          marsExploreButton, marsImage, marsTitleText, mercuryExploreButton, mercuryImage,
+          mercuryTitleText, neptuneExploreButton, neptuneImage, neptuneTitleText, planetImage,
+          saturnExploreButton, saturnImage, saturnTitleText, titleText, uranusExploreButton,
+          uranusImage, uranusTitleText, venusExploreButton, venusImage, venusTitleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

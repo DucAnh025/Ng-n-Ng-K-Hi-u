@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.NasaClient" >
         <activity
+            android:name="com.example.nasaclient.PlanetInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.ui.theme.PlanetInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.HelpAndSupportActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.nasaclient.LegalAndPoliciesActivity"
             android:exported="false" />
         <activity

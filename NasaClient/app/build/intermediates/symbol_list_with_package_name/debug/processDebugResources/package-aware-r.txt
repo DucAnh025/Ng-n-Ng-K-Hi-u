@@ -3290,6 +3290,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3386,6 +3387,7 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
+id earthExploreButton
 id easeIn
 id easeInOut
 id easeOut
@@ -3411,7 +3413,6 @@ id et_username
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id exploreButton
 id fade
 id fill
 id fill_horizontal
@@ -3606,6 +3607,9 @@ id percent
 id pin
 id planet
 id planetImage
+id planetImageView
+id planetInfoTextView
+id planetNameTextView
 id pooling_container_listener_holder_tag
 id position
 id postLayout
@@ -3910,6 +3914,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_change_password
 layout activity_edit_profile
+layout activity_help_and_support
 layout activity_language
 layout activity_legal_and_policies
 layout activity_login
@@ -3918,6 +3923,7 @@ layout activity_news
 layout activity_notification
 layout activity_notification_setting
 layout activity_onboarding01
+layout activity_planet_info
 layout activity_planets
 layout activity_security
 layout activity_setting

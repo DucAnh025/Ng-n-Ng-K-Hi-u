@@ -11,13 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Button aligned to the top-left -->
-        <!-- Align to the left -->
-
-        <!-- Back to setting -->
-
-        <!-- Title of layout(LegalAndPolicies -->
-
         <Button
             android:id="@+id/button"
             android:layout_width="48dp"

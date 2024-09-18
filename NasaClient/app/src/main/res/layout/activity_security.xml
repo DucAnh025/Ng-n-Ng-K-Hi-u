@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:padding="24dp"
     tools:context=".NotificationSettingActivity">
-
     <!-- Back to Setting -->
     <Button
         android:id="@+id/button"

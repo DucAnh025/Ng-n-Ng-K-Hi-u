@@ -25,6 +25,9 @@ public final class ActivityEditProfileBinding implements ViewBinding {
   public final Button btnSaveChanges;
 
   @NonNull
+  public final Button button;
+
+  @NonNull
   public final EditText etEmail;
 
   @NonNull
@@ -40,10 +43,12 @@ public final class ActivityEditProfileBinding implements ViewBinding {
   public final ImageView profileImage;
 
   private ActivityEditProfileBinding(@NonNull ScrollView rootView, @NonNull Button btnSaveChanges,
-      @NonNull EditText etEmail, @NonNull EditText etFullName, @NonNull EditText etPhoneNumber,
-      @NonNull EditText etUsername, @NonNull ImageView profileImage) {
+      @NonNull Button button, @NonNull EditText etEmail, @NonNull EditText etFullName,
+      @NonNull EditText etPhoneNumber, @NonNull EditText etUsername,
+      @NonNull ImageView profileImage) {
     this.rootView = rootView;
     this.btnSaveChanges = btnSaveChanges;
+    this.button = button;
     this.etEmail = etEmail;
     this.etFullName = etFullName;
     this.etPhoneNumber = etPhoneNumber;
@@ -84,6 +89,12 @@ public final class ActivityEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button;
+      Button button = ViewBindings.findChildViewById(rootView, id);
+      if (button == null) {
+        break missingId;
+      }
+
       id = R.id.et_email;
       EditText etEmail = ViewBindings.findChildViewById(rootView, id);
       if (etEmail == null) {
@@ -114,7 +125,7 @@ public final class ActivityEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEditProfileBinding((ScrollView) rootView, btnSaveChanges, etEmail,
+      return new ActivityEditProfileBinding((ScrollView) rootView, btnSaveChanges, button, etEmail,
           etFullName, etPhoneNumber, etUsername, profileImage);
     }
     String missingId = rootView.getResources().getResourceName(id);

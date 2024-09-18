@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nasaclient.R;
@@ -19,28 +19,109 @@ import java.lang.String;
 
 public final class ActivityPlanetsBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final Button exploreButton;
 
   @NonNull
+  public final Button marsExploreButton;
+
+  @NonNull
+  public final ImageView marsImage;
+
+  @NonNull
+  public final TextView marsTitleText;
+
+  @NonNull
+  public final Button mercuryExploreButton;
+
+  @NonNull
+  public final ImageView mercuryImage;
+
+  @NonNull
+  public final TextView mercuryTitleText;
+
+  @NonNull
+  public final Button neptuneExploreButton;
+
+  @NonNull
+  public final ImageView neptuneImage;
+
+  @NonNull
+  public final TextView neptuneTitleText;
+
+  @NonNull
   public final ImageView planetImage;
+
+  @NonNull
+  public final Button saturnExploreButton;
+
+  @NonNull
+  public final ImageView saturnImage;
+
+  @NonNull
+  public final TextView saturnTitleText;
 
   @NonNull
   public final TextView titleText;
 
-  private ActivityPlanetsBinding(@NonNull CardView rootView, @NonNull Button exploreButton,
-      @NonNull ImageView planetImage, @NonNull TextView titleText) {
+  @NonNull
+  public final Button uranusExploreButton;
+
+  @NonNull
+  public final ImageView uranusImage;
+
+  @NonNull
+  public final TextView uranusTitleText;
+
+  @NonNull
+  public final Button venusExploreButton;
+
+  @NonNull
+  public final ImageView venusImage;
+
+  @NonNull
+  public final TextView venusTitleText;
+
+  private ActivityPlanetsBinding(@NonNull ScrollView rootView, @NonNull Button exploreButton,
+      @NonNull Button marsExploreButton, @NonNull ImageView marsImage,
+      @NonNull TextView marsTitleText, @NonNull Button mercuryExploreButton,
+      @NonNull ImageView mercuryImage, @NonNull TextView mercuryTitleText,
+      @NonNull Button neptuneExploreButton, @NonNull ImageView neptuneImage,
+      @NonNull TextView neptuneTitleText, @NonNull ImageView planetImage,
+      @NonNull Button saturnExploreButton, @NonNull ImageView saturnImage,
+      @NonNull TextView saturnTitleText, @NonNull TextView titleText,
+      @NonNull Button uranusExploreButton, @NonNull ImageView uranusImage,
+      @NonNull TextView uranusTitleText, @NonNull Button venusExploreButton,
+      @NonNull ImageView venusImage, @NonNull TextView venusTitleText) {
     this.rootView = rootView;
     this.exploreButton = exploreButton;
+    this.marsExploreButton = marsExploreButton;
+    this.marsImage = marsImage;
+    this.marsTitleText = marsTitleText;
+    this.mercuryExploreButton = mercuryExploreButton;
+    this.mercuryImage = mercuryImage;
+    this.mercuryTitleText = mercuryTitleText;
+    this.neptuneExploreButton = neptuneExploreButton;
+    this.neptuneImage = neptuneImage;
+    this.neptuneTitleText = neptuneTitleText;
     this.planetImage = planetImage;
+    this.saturnExploreButton = saturnExploreButton;
+    this.saturnImage = saturnImage;
+    this.saturnTitleText = saturnTitleText;
     this.titleText = titleText;
+    this.uranusExploreButton = uranusExploreButton;
+    this.uranusImage = uranusImage;
+    this.uranusTitleText = uranusTitleText;
+    this.venusExploreButton = venusExploreButton;
+    this.venusImage = venusImage;
+    this.venusTitleText = venusTitleText;
   }
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -71,9 +152,81 @@ public final class ActivityPlanetsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.marsExploreButton;
+      Button marsExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (marsExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.marsImage;
+      ImageView marsImage = ViewBindings.findChildViewById(rootView, id);
+      if (marsImage == null) {
+        break missingId;
+      }
+
+      id = R.id.marsTitleText;
+      TextView marsTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (marsTitleText == null) {
+        break missingId;
+      }
+
+      id = R.id.mercuryExploreButton;
+      Button mercuryExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (mercuryExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.mercuryImage;
+      ImageView mercuryImage = ViewBindings.findChildViewById(rootView, id);
+      if (mercuryImage == null) {
+        break missingId;
+      }
+
+      id = R.id.mercuryTitleText;
+      TextView mercuryTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (mercuryTitleText == null) {
+        break missingId;
+      }
+
+      id = R.id.neptuneExploreButton;
+      Button neptuneExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (neptuneExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.neptuneImage;
+      ImageView neptuneImage = ViewBindings.findChildViewById(rootView, id);
+      if (neptuneImage == null) {
+        break missingId;
+      }
+
+      id = R.id.neptuneTitleText;
+      TextView neptuneTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (neptuneTitleText == null) {
+        break missingId;
+      }
+
       id = R.id.planetImage;
       ImageView planetImage = ViewBindings.findChildViewById(rootView, id);
       if (planetImage == null) {
+        break missingId;
+      }
+
+      id = R.id.saturnExploreButton;
+      Button saturnExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (saturnExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.saturnImage;
+      ImageView saturnImage = ViewBindings.findChildViewById(rootView, id);
+      if (saturnImage == null) {
+        break missingId;
+      }
+
+      id = R.id.saturnTitleText;
+      TextView saturnTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (saturnTitleText == null) {
         break missingId;
       }
 
@@ -83,7 +236,47 @@ public final class ActivityPlanetsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlanetsBinding((CardView) rootView, exploreButton, planetImage, titleText);
+      id = R.id.uranusExploreButton;
+      Button uranusExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (uranusExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.uranusImage;
+      ImageView uranusImage = ViewBindings.findChildViewById(rootView, id);
+      if (uranusImage == null) {
+        break missingId;
+      }
+
+      id = R.id.uranusTitleText;
+      TextView uranusTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (uranusTitleText == null) {
+        break missingId;
+      }
+
+      id = R.id.venusExploreButton;
+      Button venusExploreButton = ViewBindings.findChildViewById(rootView, id);
+      if (venusExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.venusImage;
+      ImageView venusImage = ViewBindings.findChildViewById(rootView, id);
+      if (venusImage == null) {
+        break missingId;
+      }
+
+      id = R.id.venusTitleText;
+      TextView venusTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (venusTitleText == null) {
+        break missingId;
+      }
+
+      return new ActivityPlanetsBinding((ScrollView) rootView, exploreButton, marsExploreButton,
+          marsImage, marsTitleText, mercuryExploreButton, mercuryImage, mercuryTitleText,
+          neptuneExploreButton, neptuneImage, neptuneTitleText, planetImage, saturnExploreButton,
+          saturnImage, saturnTitleText, titleText, uranusExploreButton, uranusImage,
+          uranusTitleText, venusExploreButton, venusImage, venusTitleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

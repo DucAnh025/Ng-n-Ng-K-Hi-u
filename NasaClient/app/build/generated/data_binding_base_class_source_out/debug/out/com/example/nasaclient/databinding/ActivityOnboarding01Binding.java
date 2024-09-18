@@ -4,20 +4,71 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import com.example.nasaclient.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityOnboarding01Binding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityOnboarding01Binding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final TextView alreadyHaveAccountText;
+
+  @NonNull
+  public final Button createAccountButton;
+
+  @NonNull
+  public final View dot1;
+
+  @NonNull
+  public final View dot2;
+
+  @NonNull
+  public final View dot3;
+
+  @NonNull
+  public final LinearLayout dotIndicator;
+
+  @NonNull
+  public final CardView imageCard;
+
+  @NonNull
+  public final TextView subtitleText;
+
+  @NonNull
+  public final TextView titleText;
+
+  @NonNull
+  public final ViewPager2 viewPager;
+
+  private ActivityOnboarding01Binding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView alreadyHaveAccountText, @NonNull Button createAccountButton,
+      @NonNull View dot1, @NonNull View dot2, @NonNull View dot3,
+      @NonNull LinearLayout dotIndicator, @NonNull CardView imageCard,
+      @NonNull TextView subtitleText, @NonNull TextView titleText, @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
+    this.alreadyHaveAccountText = alreadyHaveAccountText;
+    this.createAccountButton = createAccountButton;
+    this.dot1 = dot1;
+    this.dot2 = dot2;
+    this.dot3 = dot3;
+    this.dotIndicator = dotIndicator;
+    this.imageCard = imageCard;
+    this.subtitleText = subtitleText;
+    this.titleText = titleText;
+    this.viewPager = viewPager;
   }
 
   @Override
@@ -43,10 +94,75 @@ public final class ActivityOnboarding01Binding implements ViewBinding {
 
   @NonNull
   public static ActivityOnboarding01Binding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.alreadyHaveAccountText;
+      TextView alreadyHaveAccountText = ViewBindings.findChildViewById(rootView, id);
+      if (alreadyHaveAccountText == null) {
+        break missingId;
+      }
 
-    return new ActivityOnboarding01Binding((ConstraintLayout) rootView);
+      id = R.id.createAccountButton;
+      Button createAccountButton = ViewBindings.findChildViewById(rootView, id);
+      if (createAccountButton == null) {
+        break missingId;
+      }
+
+      id = R.id.dot1;
+      View dot1 = ViewBindings.findChildViewById(rootView, id);
+      if (dot1 == null) {
+        break missingId;
+      }
+
+      id = R.id.dot2;
+      View dot2 = ViewBindings.findChildViewById(rootView, id);
+      if (dot2 == null) {
+        break missingId;
+      }
+
+      id = R.id.dot3;
+      View dot3 = ViewBindings.findChildViewById(rootView, id);
+      if (dot3 == null) {
+        break missingId;
+      }
+
+      id = R.id.dotIndicator;
+      LinearLayout dotIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (dotIndicator == null) {
+        break missingId;
+      }
+
+      id = R.id.imageCard;
+      CardView imageCard = ViewBindings.findChildViewById(rootView, id);
+      if (imageCard == null) {
+        break missingId;
+      }
+
+      id = R.id.subtitleText;
+      TextView subtitleText = ViewBindings.findChildViewById(rootView, id);
+      if (subtitleText == null) {
+        break missingId;
+      }
+
+      id = R.id.titleText;
+      TextView titleText = ViewBindings.findChildViewById(rootView, id);
+      if (titleText == null) {
+        break missingId;
+      }
+
+      id = R.id.viewPager;
+      ViewPager2 viewPager = ViewBindings.findChildViewById(rootView, id);
+      if (viewPager == null) {
+        break missingId;
+      }
+
+      return new ActivityOnboarding01Binding((ConstraintLayout) rootView, alreadyHaveAccountText,
+          createAccountButton, dot1, dot2, dot3, dotIndicator, imageCard, subtitleText, titleText,
+          viewPager);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

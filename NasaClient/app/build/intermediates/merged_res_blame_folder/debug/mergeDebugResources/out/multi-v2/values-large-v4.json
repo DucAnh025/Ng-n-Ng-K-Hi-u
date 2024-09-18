@@ -4,7 +4,7 @@
             "outputFile": "com.example.nasaclient.app-mergeDebugResources-63:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-4\\573dac0923a95f3cd66e83937d90c216\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "/Users/buiquangtrung/.gradle/caches/transforms-4/573dac0923a95f3cd66e83937d90c216/transformed/material-1.12.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-4\\06c088b7aa5bb6ab24a431f9c5006195\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "/Users/buiquangtrung/.gradle/caches/transforms-4/06c088b7aa5bb6ab24a431f9c5006195/transformed/appcompat-1.7.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

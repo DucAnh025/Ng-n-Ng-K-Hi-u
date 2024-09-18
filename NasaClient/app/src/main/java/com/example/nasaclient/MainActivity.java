@@ -8,13 +8,11 @@ import com.example.nasaclient.databinding.ActivityWithNavBinding;
 
 public class MainActivity extends FragmentActivity {
     ActivityWithNavBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityWithNavBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         // Set content for the HomeActivity
         getLayoutInflater().inflate(R.layout.activity_main, binding.container, true);
         binding.bottomNavigationView.setSelectedItemId(R.id.home);

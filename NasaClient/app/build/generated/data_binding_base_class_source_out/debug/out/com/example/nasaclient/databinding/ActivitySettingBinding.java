@@ -4,7 +4,6 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -25,16 +24,12 @@ public final class ActivitySettingBinding implements ViewBinding {
   public final ImageButton btnMore;
 
   @NonNull
-  public final Button btnSetting;
-
-  @NonNull
   public final TextView tvSettingTitle;
 
   private ActivitySettingBinding(@NonNull ScrollView rootView, @NonNull ImageButton btnMore,
-      @NonNull Button btnSetting, @NonNull TextView tvSettingTitle) {
+      @NonNull TextView tvSettingTitle) {
     this.rootView = rootView;
     this.btnMore = btnMore;
-    this.btnSetting = btnSetting;
     this.tvSettingTitle = tvSettingTitle;
   }
 
@@ -71,19 +66,13 @@ public final class ActivitySettingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnSetting;
-      Button btnSetting = ViewBindings.findChildViewById(rootView, id);
-      if (btnSetting == null) {
-        break missingId;
-      }
-
       id = R.id.tv_setting_title;
       TextView tvSettingTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvSettingTitle == null) {
         break missingId;
       }
 
-      return new ActivitySettingBinding((ScrollView) rootView, btnMore, btnSetting, tvSettingTitle);
+      return new ActivitySettingBinding((ScrollView) rootView, btnMore, tvSettingTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

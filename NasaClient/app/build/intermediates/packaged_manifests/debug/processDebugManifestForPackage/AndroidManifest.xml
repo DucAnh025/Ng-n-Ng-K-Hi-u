@@ -28,7 +28,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.NasaClient" >
         <activity
-            android:name="com.example.nasaclient.HomeActivity"
+            android:name="com.example.nasaclient.LegalAndPoliciesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.LanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.SecurityActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.NotificationSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.OnBoardingActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nasaclient.PlanetActivity"
@@ -63,6 +78,11 @@
             android:name="com.example.nasaclient.EditProfileActivity"
             android:exported="false"
             android:label="Edit Profile"
+            android:theme="@style/Theme.NasaClient" />
+        <activity
+            android:name="com.example.nasaclient.ChangePasswordActivity"
+            android:exported="false"
+            android:label="Change Password"
             android:theme="@style/Theme.NasaClient" />
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"

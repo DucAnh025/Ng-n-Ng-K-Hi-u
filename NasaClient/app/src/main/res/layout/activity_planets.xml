@@ -47,7 +47,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/exploreButton"
+                    android:id="@+id/earthExploreButton"
                     android:layout_width="226dp"
                     android:layout_height="59dp"
                     android:layout_margin="16dp"
@@ -57,6 +57,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore the Earth"
+                    android:onClick="onEarthButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -111,6 +112,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore Mercury"
+                    android:onClick="onMercuryButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -165,6 +167,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore Venus"
+                    android:onClick="onVenusButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -219,6 +222,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore Mars"
+                    android:onClick="onMarsButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -273,6 +277,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore Saturn"
+                    android:onClick="onSaturnButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -327,6 +332,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore Uranus"
+                    android:onClick="onUranusButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -381,6 +387,7 @@
                     android:background="@drawable/rounded_button"
                     android:padding="12dp"
                     android:text="Explore Neptune"
+                    android:onClick="onNeptuneButtonClick"
                     android:textColor="#FFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />

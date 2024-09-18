@@ -9,241 +9,241 @@
 9        android:targetSdkVersion="34" />
 10
 11    <permission
-11-->[androidx.core:core:1.13.0] /Users/buiquangtrung/.gradle/caches/transforms-4/8ccc58a798042cb4a718f4dc62a5342b/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.13.0] C:\Users\DELL\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.nasaclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.13.0] /Users/buiquangtrung/.gradle/caches/transforms-4/8ccc58a798042cb4a718f4dc62a5342b/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.13.0] C:\Users\DELL\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.13.0] /Users/buiquangtrung/.gradle/caches/transforms-4/8ccc58a798042cb4a718f4dc62a5342b/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.13.0] C:\Users\DELL\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.example.nasaclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.13.0] /Users/buiquangtrung/.gradle/caches/transforms-4/8ccc58a798042cb4a718f4dc62a5342b/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.13.0] /Users/buiquangtrung/.gradle/caches/transforms-4/8ccc58a798042cb4a718f4dc62a5342b/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.13.0] C:\Users\DELL\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0] C:\Users\DELL\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:5:5-72:19
+17-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:5:5-72:19
 18        android:allowBackup="true"
-18-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:6:9-35
+18-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.13.0] /Users/buiquangtrung/.gradle/caches/transforms-4/8ccc58a798042cb4a718f4dc62a5342b/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.13.0] C:\Users\DELL\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:7:9-65
+20-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:8:9-54
+23-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:9:9-43
+24-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:10:9-41
+25-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:11:9-54
+26-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:12:9-35
+27-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.NasaClient" >
-29-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:13:9-48
+29-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:13:9-48
 30        <activity
-30-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:15:9-17:40
+30-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:15:9-17:40
 31            android:name="com.example.nasaclient.LegalAndPoliciesActivity"
-31-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:16:13-53
+31-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:16:13-53
 32            android:exported="false" />
-32-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:17:13-37
+32-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:17:13-37
 33        <activity
-33-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:18:9-20:40
+33-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:18:9-20:40
 34            android:name="com.example.nasaclient.LanguageActivity"
-34-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:19:13-45
+34-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:19:13-45
 35            android:exported="false" />
-35-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:20:13-37
+35-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:20:13-37
 36        <activity
-36-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:21:9-23:40
+36-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:21:9-23:40
 37            android:name="com.example.nasaclient.SecurityActivity"
-37-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:22:13-45
+37-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:22:13-45
 38            android:exported="false" />
-38-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:23:13-37
+38-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:23:13-37
 39        <activity
-39-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:24:9-26:40
+39-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:24:9-26:40
 40            android:name="com.example.nasaclient.NotificationActivity"
-40-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:25:13-49
+40-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:25:13-49
 41            android:exported="false" />
-41-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:26:13-37
+41-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:26:13-37
 42        <activity
-42-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:27:9-29:40
+42-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:27:9-29:40
 43            android:name="com.example.nasaclient.NotificationSettingActivity"
-43-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:28:13-56
+43-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:28:13-56
 44            android:exported="false" />
-44-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:29:13-37
+44-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:29:13-37
 45        <activity
-45-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:30:9-32:40
+45-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:30:9-32:40
 46            android:name="com.example.nasaclient.OnBoardingActivity"
-46-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:31:13-47
+46-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:31:13-47
 47            android:exported="false" />
-47-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:32:13-37
+47-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:32:13-37
 48        <activity
-48-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:33:9-35:40
+48-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:33:9-35:40
 49            android:name="com.example.nasaclient.PlanetActivity"
-49-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:34:13-43
+49-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:34:13-43
 50            android:exported="false" />
-50-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:35:13-37
+50-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:35:13-37
 51        <activity
-51-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:36:9-40:55
+51-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:36:9-40:55
 52            android:name="com.example.nasaclient.SettingActivity"
-52-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:37:13-44
+52-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:37:13-44
 53            android:exported="false"
-53-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:38:13-37
+53-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:38:13-37
 54            android:label="Setting"
-54-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:39:13-36
+54-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:39:13-36
 55            android:theme="@style/Theme.NasaClient" />
-55-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:40:13-52
+55-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:40:13-52
 56        <activity
-56-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:41:9-45:55
+56-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:41:9-45:55
 57            android:name="com.example.nasaclient.NewsActivity"
-57-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:42:13-41
+57-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:42:13-41
 58            android:exported="false"
-58-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:43:13-37
+58-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:43:13-37
 59            android:label="News"
-59-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:44:13-33
+59-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:44:13-33
 60            android:theme="@style/Theme.NasaClient" />
-60-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:45:13-52
+60-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:45:13-52
 61        <activity
-61-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:46:9-56:20
+61-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:46:9-56:20
 62            android:name="com.example.nasaclient.MainActivity"
-62-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:47:13-41
+62-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:47:13-41
 63            android:exported="true"
-63-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:48:13-36
+63-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:48:13-36
 64            android:label="@string/app_name"
-64-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:49:13-45
+64-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:49:13-45
 65            android:theme="@style/Theme.NasaClient" >
-65-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:50:13-52
+65-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:50:13-52
 66            <intent-filter>
-66-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:51:13-55:29
+66-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:51:13-55:29
 67                <action android:name="android.intent.action.MAIN" />
-67-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:52:17-69
-67-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:52:25-66
+67-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:52:17-69
+67-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:52:25-66
 68
 69                <category android:name="android.intent.category.LAUNCHER" />
-69-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:54:17-77
-69-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:54:27-74
+69-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:54:17-77
+69-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:54:27-74
 70            </intent-filter>
 71        </activity>
 72        <activity
-72-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:57:9-61:55
+72-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:57:9-61:55
 73            android:name="com.example.nasaclient.LoginActivity"
-73-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:58:13-42
+73-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:58:13-42
 74            android:exported="false"
-74-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:59:13-37
+74-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:59:13-37
 75            android:label="Login"
-75-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:60:13-34
+75-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:60:13-34
 76            android:theme="@style/Theme.NasaClient" />
-76-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:61:13-52
+76-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:61:13-52
 77        <activity
-77-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:62:9-66:55
+77-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:62:9-66:55
 78            android:name="com.example.nasaclient.EditProfileActivity"
-78-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:63:13-48
+78-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:63:13-48
 79            android:exported="false"
-79-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:64:13-37
+79-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:64:13-37
 80            android:label="Edit Profile"
-80-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:65:13-41
+80-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:65:13-41
 81            android:theme="@style/Theme.NasaClient" />
-81-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:66:13-52
+81-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:66:13-52
 82        <activity
-82-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:67:9-71:55
+82-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:67:9-71:55
 83            android:name="com.example.nasaclient.ChangePasswordActivity"
-83-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:68:13-51
+83-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:68:13-51
 84            android:exported="false"
-84-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:69:13-37
+84-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:69:13-37
 85            android:label="Change Password"
-85-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:70:13-44
+85-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:70:13-44
 86            android:theme="@style/Theme.NasaClient" />
-86-->/Users/buiquangtrung/Downloads/B3/Test/Nasa-Client/NasaClient/app/src/main/AndroidManifest.xml:71:13-52
+86-->F:\Midterm app mobile\NasaClient\app\src\main\AndroidManifest.xml:71:13-52
 87        <activity
-87-->[androidx.compose.ui:ui-tooling-android:1.6.6] /Users/buiquangtrung/.gradle/caches/transforms-4/4a3a484c43b5c8bb47eecfbb1cda6d8e/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+87-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\DELL\.gradle\caches\transforms-4\4a3a484c43b5c8bb47eecfbb1cda6d8e\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
 88            android:name="androidx.compose.ui.tooling.PreviewActivity"
-88-->[androidx.compose.ui:ui-tooling-android:1.6.6] /Users/buiquangtrung/.gradle/caches/transforms-4/4a3a484c43b5c8bb47eecfbb1cda6d8e/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+88-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\DELL\.gradle\caches\transforms-4\4a3a484c43b5c8bb47eecfbb1cda6d8e\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
 89            android:exported="true" />
-89-->[androidx.compose.ui:ui-tooling-android:1.6.6] /Users/buiquangtrung/.gradle/caches/transforms-4/4a3a484c43b5c8bb47eecfbb1cda6d8e/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+89-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\DELL\.gradle\caches\transforms-4\4a3a484c43b5c8bb47eecfbb1cda6d8e\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
 90        <activity
-90-->[androidx.compose.ui:ui-test-manifest:1.6.6] /Users/buiquangtrung/.gradle/caches/transforms-4/8f03ae56bd1a6ce2eee2341b15fe9897/transformed/ui-test-manifest-1.6.6/AndroidManifest.xml:23:9-25:39
+90-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\DELL\.gradle\caches\transforms-4\8f03ae56bd1a6ce2eee2341b15fe9897\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
 91            android:name="androidx.activity.ComponentActivity"
-91-->[androidx.compose.ui:ui-test-manifest:1.6.6] /Users/buiquangtrung/.gradle/caches/transforms-4/8f03ae56bd1a6ce2eee2341b15fe9897/transformed/ui-test-manifest-1.6.6/AndroidManifest.xml:24:13-63
+91-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\DELL\.gradle\caches\transforms-4\8f03ae56bd1a6ce2eee2341b15fe9897\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
 92            android:exported="true" />
-92-->[androidx.compose.ui:ui-test-manifest:1.6.6] /Users/buiquangtrung/.gradle/caches/transforms-4/8f03ae56bd1a6ce2eee2341b15fe9897/transformed/ui-test-manifest-1.6.6/AndroidManifest.xml:25:13-36
+92-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\DELL\.gradle\caches\transforms-4\8f03ae56bd1a6ce2eee2341b15fe9897\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
 93
 94        <provider
-94-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 95            android:name="androidx.startup.InitializationProvider"
-95-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 96            android:authorities="com.example.nasaclient.androidx-startup"
-96-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 97            android:exported="false" >
-97-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+97-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 98            <meta-data
-98-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+98-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 99                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-99-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 100                android:value="androidx.startup" />
-100-->[androidx.emoji2:emoji2:1.3.0] /Users/buiquangtrung/.gradle/caches/transforms-4/b0862d2bcabaed3e1cb387201b81c316/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\DELL\.gradle\caches\transforms-4\b0862d2bcabaed3e1cb387201b81c316\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 101            <meta-data
-101-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/buiquangtrung/.gradle/caches/transforms-4/c4e2a01618c3969f32ef9dcfe011fdfa/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+101-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\DELL\.gradle\caches\transforms-4\c4e2a01618c3969f32ef9dcfe011fdfa\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 102                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-102-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/buiquangtrung/.gradle/caches/transforms-4/c4e2a01618c3969f32ef9dcfe011fdfa/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+102-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\DELL\.gradle\caches\transforms-4\c4e2a01618c3969f32ef9dcfe011fdfa\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 103                android:value="androidx.startup" />
-103-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/buiquangtrung/.gradle/caches/transforms-4/c4e2a01618c3969f32ef9dcfe011fdfa/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+103-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\DELL\.gradle\caches\transforms-4\c4e2a01618c3969f32ef9dcfe011fdfa\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 104            <meta-data
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 105                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 106                android:value="androidx.startup" />
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
 107        </provider>
 108
 109        <uses-library
-109-->[androidx.window:window:1.0.0] /Users/buiquangtrung/.gradle/caches/transforms-4/03a58f60fdb21650f00baddb721a54eb/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+109-->[androidx.window:window:1.0.0] C:\Users\DELL\.gradle\caches\transforms-4\03a58f60fdb21650f00baddb721a54eb\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 110            android:name="androidx.window.extensions"
-110-->[androidx.window:window:1.0.0] /Users/buiquangtrung/.gradle/caches/transforms-4/03a58f60fdb21650f00baddb721a54eb/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+110-->[androidx.window:window:1.0.0] C:\Users\DELL\.gradle\caches\transforms-4\03a58f60fdb21650f00baddb721a54eb\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 111            android:required="false" />
-111-->[androidx.window:window:1.0.0] /Users/buiquangtrung/.gradle/caches/transforms-4/03a58f60fdb21650f00baddb721a54eb/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+111-->[androidx.window:window:1.0.0] C:\Users\DELL\.gradle\caches\transforms-4\03a58f60fdb21650f00baddb721a54eb\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 112        <uses-library
-112-->[androidx.window:window:1.0.0] /Users/buiquangtrung/.gradle/caches/transforms-4/03a58f60fdb21650f00baddb721a54eb/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+112-->[androidx.window:window:1.0.0] C:\Users\DELL\.gradle\caches\transforms-4\03a58f60fdb21650f00baddb721a54eb\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 113            android:name="androidx.window.sidecar"
-113-->[androidx.window:window:1.0.0] /Users/buiquangtrung/.gradle/caches/transforms-4/03a58f60fdb21650f00baddb721a54eb/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+113-->[androidx.window:window:1.0.0] C:\Users\DELL\.gradle\caches\transforms-4\03a58f60fdb21650f00baddb721a54eb\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 114            android:required="false" />
-114-->[androidx.window:window:1.0.0] /Users/buiquangtrung/.gradle/caches/transforms-4/03a58f60fdb21650f00baddb721a54eb/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+114-->[androidx.window:window:1.0.0] C:\Users\DELL\.gradle\caches\transforms-4\03a58f60fdb21650f00baddb721a54eb\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 115
 116        <receiver
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
 117            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
 118            android:directBootAware="false"
-118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
 119            android:enabled="true"
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
 120            android:exported="true"
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
 121            android:permission="android.permission.DUMP" >
-121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
 123                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 124            </intent-filter>
 125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
 126                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 127            </intent-filter>
 128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
 129                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 130            </intent-filter>
 131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
 132                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/buiquangtrung/.gradle/caches/transforms-4/a11453f2ff44217bb2eeead8b3e4b19d/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DELL\.gradle\caches\transforms-4\a11453f2ff44217bb2eeead8b3e4b19d\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
 133            </intent-filter>
 134        </receiver>
 135    </application>

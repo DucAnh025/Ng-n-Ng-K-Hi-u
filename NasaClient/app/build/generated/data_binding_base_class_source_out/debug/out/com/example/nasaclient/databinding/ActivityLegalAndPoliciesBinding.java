@@ -30,16 +30,16 @@ public final class ActivityLegalAndPoliciesBinding implements ViewBinding {
   public final TextView Term;
 
   @NonNull
-  public final Button button;
+  public final Button btnback;
 
   private ActivityLegalAndPoliciesBinding(@NonNull ScrollView rootView,
       @NonNull TextView ChangesServiceTerms, @NonNull TextView LegalAndPolicies,
-      @NonNull TextView Term, @NonNull Button button) {
+      @NonNull TextView Term, @NonNull Button btnback) {
     this.rootView = rootView;
     this.ChangesServiceTerms = ChangesServiceTerms;
     this.LegalAndPolicies = LegalAndPolicies;
     this.Term = Term;
-    this.button = button;
+    this.btnback = btnback;
   }
 
   @Override
@@ -87,14 +87,14 @@ public final class ActivityLegalAndPoliciesBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnback;
+      Button btnback = ViewBindings.findChildViewById(rootView, id);
+      if (btnback == null) {
         break missingId;
       }
 
       return new ActivityLegalAndPoliciesBinding((ScrollView) rootView, ChangesServiceTerms,
-          LegalAndPolicies, Term, button);
+          LegalAndPolicies, Term, btnback);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

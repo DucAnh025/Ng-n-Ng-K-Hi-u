@@ -164,6 +164,10 @@
         "source": "com.example.nasaclient.app-main-67:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.nasaclient.app-debug-65:/drawable_transparent_button_background.xml.flat",
+        "source": "com.example.nasaclient.app-main-67:/drawable/transparent_button_background.xml"
+    },
+    {
         "merged": "com.example.nasaclient.app-debug-65:/drawable_circle_notification.xml.flat",
         "source": "com.example.nasaclient.app-main-67:/drawable/circle_notification.xml"
     },
@@ -250,6 +254,10 @@
     {
         "merged": "com.example.nasaclient.app-debug-65:/layout_activity_notification.xml.flat",
         "source": "com.example.nasaclient.app-main-67:/layout/activity_notification.xml"
+    },
+    {
+        "merged": "com.example.nasaclient.app-debug-65:/drawable_search_background.xml.flat",
+        "source": "com.example.nasaclient.app-main-67:/drawable/search_background.xml"
     },
     {
         "merged": "com.example.nasaclient.app-debug-65:/drawable_onboarding_img3.jpg.flat",

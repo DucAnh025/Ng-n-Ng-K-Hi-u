@@ -53,187 +53,96 @@
             android:layout_marginBottom="8dp" />
 
         <!-- Edit Profile Button -->
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_edit_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_edit_profile"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Edit Profile"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_edit_profile"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Edit Profile"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"/>
-        </LinearLayout>
-
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_change_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_changepassword"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Change Password"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_changepassword"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Change Password"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"/>
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_notif"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Notification"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_notif"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Notification"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"/>
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_notification_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_notifsetting"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Notification Setting"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_notifsetting"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Notification Setting"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"/>
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_security"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_security"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Security"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_security"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Security"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"/>
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_language"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_language"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Language"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_language"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Language"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"/>
-        </LinearLayout>
 
         <!-- Preferences Section -->
         <TextView
@@ -247,104 +156,50 @@
             android:layout_marginBottom="8dp" />
 
         <!-- Legal and Policies Button -->
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_legal_policies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_legal"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Legal and Policies"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_legal"
-                android:contentDescription="Legal Icon" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Legal and Policies"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"
-                android:contentDescription="Arrow Icon" />
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_help_support"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
-            android:background="@drawable/rounded_button_white"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_help"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:background="@drawable/rounded_button_white"
+            android:text="Helps and Support"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center_vertical|start"
+            android:drawablePadding="16dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_help"
-                android:contentDescription="Legal Icon" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Helps and Support"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"
-                android:contentDescription="Arrow Icon" />
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="12dp"
+            android:drawableStart="@drawable/ic_legal"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:text="Log Out"
+            android:textSize="13sp"
+            android:textColor="#000000"
             android:background="@drawable/rounded_button_white"
+            android:padding="12dp"
+            android:gravity="start|center_vertical"
             android:layout_marginBottom="8dp"
-            android:clickable="true"
-            android:focusable="true">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_legal"
-                android:contentDescription="Legal Icon" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Log Out"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_arrow_right"
-                android:contentDescription="Arrow Icon" />
-
-        </LinearLayout>
-
+            android:drawablePadding="16dp"/>
 
     </LinearLayout>
 

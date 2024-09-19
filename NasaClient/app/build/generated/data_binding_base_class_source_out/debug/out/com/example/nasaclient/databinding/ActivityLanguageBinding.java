@@ -29,7 +29,7 @@ public final class ActivityLanguageBinding implements ViewBinding {
   public final TextInputLayout Searchlanguagelayout;
 
   @NonNull
-  public final Button button;
+  public final Button btnback;
 
   @NonNull
   public final LinearLayout main;
@@ -39,11 +39,11 @@ public final class ActivityLanguageBinding implements ViewBinding {
 
   private ActivityLanguageBinding(@NonNull LinearLayout rootView,
       @NonNull TextInputEditText Searchlanguage, @NonNull TextInputLayout Searchlanguagelayout,
-      @NonNull Button button, @NonNull LinearLayout main, @NonNull TextView titleText) {
+      @NonNull Button btnback, @NonNull LinearLayout main, @NonNull TextView titleText) {
     this.rootView = rootView;
     this.Searchlanguage = Searchlanguage;
     this.Searchlanguagelayout = Searchlanguagelayout;
-    this.button = button;
+    this.btnback = btnback;
     this.main = main;
     this.titleText = titleText;
   }
@@ -87,9 +87,9 @@ public final class ActivityLanguageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnback;
+      Button btnback = ViewBindings.findChildViewById(rootView, id);
+      if (btnback == null) {
         break missingId;
       }
 
@@ -102,7 +102,7 @@ public final class ActivityLanguageBinding implements ViewBinding {
       }
 
       return new ActivityLanguageBinding((LinearLayout) rootView, Searchlanguage,
-          Searchlanguagelayout, button, main, titleText);
+          Searchlanguagelayout, btnback, main, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

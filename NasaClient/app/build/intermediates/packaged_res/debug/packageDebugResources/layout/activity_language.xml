@@ -11,7 +11,7 @@
 
     <!-- Back to Setting -->
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnback"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@drawable/ic_arrow_left"

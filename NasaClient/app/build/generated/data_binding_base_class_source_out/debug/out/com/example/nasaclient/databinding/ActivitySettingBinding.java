@@ -4,6 +4,7 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -21,15 +22,54 @@ public final class ActivitySettingBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
+  public final Button btnChangePassword;
+
+  @NonNull
+  public final Button btnEditProfile;
+
+  @NonNull
+  public final Button btnHelpSupport;
+
+  @NonNull
+  public final Button btnLanguage;
+
+  @NonNull
+  public final Button btnLegalPolicies;
+
+  @NonNull
+  public final Button btnLogout;
+
+  @NonNull
   public final ImageButton btnMore;
+
+  @NonNull
+  public final Button btnNotification;
+
+  @NonNull
+  public final Button btnNotificationSetting;
+
+  @NonNull
+  public final Button btnSecurity;
 
   @NonNull
   public final TextView tvSettingTitle;
 
-  private ActivitySettingBinding(@NonNull ScrollView rootView, @NonNull ImageButton btnMore,
-      @NonNull TextView tvSettingTitle) {
+  private ActivitySettingBinding(@NonNull ScrollView rootView, @NonNull Button btnChangePassword,
+      @NonNull Button btnEditProfile, @NonNull Button btnHelpSupport, @NonNull Button btnLanguage,
+      @NonNull Button btnLegalPolicies, @NonNull Button btnLogout, @NonNull ImageButton btnMore,
+      @NonNull Button btnNotification, @NonNull Button btnNotificationSetting,
+      @NonNull Button btnSecurity, @NonNull TextView tvSettingTitle) {
     this.rootView = rootView;
+    this.btnChangePassword = btnChangePassword;
+    this.btnEditProfile = btnEditProfile;
+    this.btnHelpSupport = btnHelpSupport;
+    this.btnLanguage = btnLanguage;
+    this.btnLegalPolicies = btnLegalPolicies;
+    this.btnLogout = btnLogout;
     this.btnMore = btnMore;
+    this.btnNotification = btnNotification;
+    this.btnNotificationSetting = btnNotificationSetting;
+    this.btnSecurity = btnSecurity;
     this.tvSettingTitle = tvSettingTitle;
   }
 
@@ -60,9 +100,63 @@ public final class ActivitySettingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_change_password;
+      Button btnChangePassword = ViewBindings.findChildViewById(rootView, id);
+      if (btnChangePassword == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_edit_profile;
+      Button btnEditProfile = ViewBindings.findChildViewById(rootView, id);
+      if (btnEditProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_help_support;
+      Button btnHelpSupport = ViewBindings.findChildViewById(rootView, id);
+      if (btnHelpSupport == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_language;
+      Button btnLanguage = ViewBindings.findChildViewById(rootView, id);
+      if (btnLanguage == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_legal_policies;
+      Button btnLegalPolicies = ViewBindings.findChildViewById(rootView, id);
+      if (btnLegalPolicies == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_logout;
+      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
       id = R.id.btn_more;
       ImageButton btnMore = ViewBindings.findChildViewById(rootView, id);
       if (btnMore == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_notification;
+      Button btnNotification = ViewBindings.findChildViewById(rootView, id);
+      if (btnNotification == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_notification_setting;
+      Button btnNotificationSetting = ViewBindings.findChildViewById(rootView, id);
+      if (btnNotificationSetting == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_security;
+      Button btnSecurity = ViewBindings.findChildViewById(rootView, id);
+      if (btnSecurity == null) {
         break missingId;
       }
 
@@ -72,7 +166,9 @@ public final class ActivitySettingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySettingBinding((ScrollView) rootView, btnMore, tvSettingTitle);
+      return new ActivitySettingBinding((ScrollView) rootView, btnChangePassword, btnEditProfile,
+          btnHelpSupport, btnLanguage, btnLegalPolicies, btnLogout, btnMore, btnNotification,
+          btnNotificationSetting, btnSecurity, tvSettingTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -26,7 +26,7 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
   public final Button btnSaveChanges;
 
   @NonNull
-  public final Button button;
+  public final Button btnback;
 
   @NonNull
   public final TextInputEditText confirmPassword;
@@ -44,13 +44,13 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
   public final TextView titleText;
 
   private ActivityChangePasswordBinding(@NonNull LinearLayout rootView,
-      @NonNull Button btnSaveChanges, @NonNull Button button,
+      @NonNull Button btnSaveChanges, @NonNull Button btnback,
       @NonNull TextInputEditText confirmPassword, @NonNull TextInputLayout confirmPasswordLayout,
       @NonNull TextInputEditText newPassword, @NonNull TextInputLayout newPasswordLayout,
       @NonNull TextView titleText) {
     this.rootView = rootView;
     this.btnSaveChanges = btnSaveChanges;
-    this.button = button;
+    this.btnback = btnback;
     this.confirmPassword = confirmPassword;
     this.confirmPasswordLayout = confirmPasswordLayout;
     this.newPassword = newPassword;
@@ -91,9 +91,9 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnback;
+      Button btnback = ViewBindings.findChildViewById(rootView, id);
+      if (btnback == null) {
         break missingId;
       }
 
@@ -127,7 +127,7 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChangePasswordBinding((LinearLayout) rootView, btnSaveChanges, button,
+      return new ActivityChangePasswordBinding((LinearLayout) rootView, btnSaveChanges, btnback,
           confirmPassword, confirmPasswordLayout, newPassword, newPasswordLayout, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);

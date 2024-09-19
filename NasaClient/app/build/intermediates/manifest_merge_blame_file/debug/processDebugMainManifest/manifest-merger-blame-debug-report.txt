@@ -20,159 +20,159 @@
 15-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:5:5-81:19
+17-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:4:5-79:19
 18        android:allowBackup="true"
-18-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:6:9-35
+18-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:5:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:7:9-65
+20-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:6:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:8:9-54
+23-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:7:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:9:9-43
+24-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:8:9-43
 25        android:label="@string/app_name"
-25-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:10:9-41
+25-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:9:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:11:9-54
+26-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:10:9-54
 27        android:supportsRtl="true"
-27-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:12:9-35
+27-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:11:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.NasaClient" >
-29-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:13:9-48
+29-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:12:9-48
 30        <activity
-30-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:15:9-17:40
+30-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:14:9-16:40
 31            android:name="com.example.nasaclient.PlanetInfoActivity"
-31-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:16:13-47
+31-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:15:13-47
 32            android:exported="false" />
-32-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:17:13-37
+32-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:16:13-37
 33        <activity
-33-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:18:9-20:40
+33-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:17:9-19:40
 34            android:name="com.example.nasaclient.ui.theme.PlanetInfoActivity"
-34-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:19:13-56
+34-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:18:13-56
 35            android:exported="false" />
-35-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:20:13-37
+35-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:19:13-37
 36        <activity
-36-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:21:9-23:40
+36-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:20:9-22:40
 37            android:name="com.example.nasaclient.HelpAndSupportActivity"
-37-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:22:13-51
+37-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:21:13-51
 38            android:exported="false" />
-38-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:23:13-37
+38-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:22:13-37
 39        <activity
-39-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:24:9-26:40
+39-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:23:9-25:40
 40            android:name="com.example.nasaclient.LegalAndPoliciesActivity"
-40-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:25:13-53
+40-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:24:13-53
 41            android:exported="false" />
-41-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:26:13-37
+41-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:25:13-37
 42        <activity
-42-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:27:9-29:40
+42-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:26:9-28:40
 43            android:name="com.example.nasaclient.LanguageActivity"
-43-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:28:13-45
+43-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:27:13-45
 44            android:exported="false" />
-44-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:29:13-37
+44-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:28:13-37
 45        <activity
-45-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:30:9-32:40
+45-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:29:9-31:40
 46            android:name="com.example.nasaclient.SecurityActivity"
-46-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:31:13-45
+46-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:30:13-45
 47            android:exported="false" />
-47-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:32:13-37
+47-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:31:13-37
 48        <activity
-48-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:33:9-35:40
+48-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:32:9-34:40
 49            android:name="com.example.nasaclient.NotificationActivity"
-49-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:34:13-49
+49-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:33:13-49
 50            android:exported="false" />
-50-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:35:13-37
+50-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:34:13-37
 51        <activity
-51-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:36:9-38:40
+51-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:35:9-37:40
 52            android:name="com.example.nasaclient.NotificationSettingActivity"
-52-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:37:13-56
+52-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:36:13-56
 53            android:exported="false" />
-53-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:38:13-37
+53-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:37:13-37
 54        <activity
-54-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:39:9-41:40
+54-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:38:9-40:40
 55            android:name="com.example.nasaclient.OnBoardingActivity"
-55-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:40:13-47
+55-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:39:13-47
 56            android:exported="false" />
-56-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:41:13-37
+56-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:40:13-37
 57        <activity
-57-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:42:9-44:40
+57-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:41:9-43:40
 58            android:name="com.example.nasaclient.PlanetActivity"
-58-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:43:13-43
+58-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:42:13-43
 59            android:exported="false" />
-59-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:44:13-37
+59-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:43:13-37
 60        <activity
-60-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:45:9-49:55
+60-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:44:9-48:55
 61            android:name="com.example.nasaclient.SettingActivity"
-61-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:46:13-44
+61-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:45:13-44
 62            android:exported="false"
-62-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:47:13-37
+62-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:46:13-37
 63            android:label="Setting"
-63-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:48:13-36
+63-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:47:13-36
 64            android:theme="@style/Theme.NasaClient" />
-64-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:49:13-52
+64-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:48:13-52
 65        <activity
-65-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:50:9-54:55
+65-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:49:9-53:55
 66            android:name="com.example.nasaclient.NewsActivity"
-66-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:51:13-41
+66-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:50:13-41
 67            android:exported="false"
-67-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:52:13-37
+67-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:51:13-37
 68            android:label="News"
-68-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:53:13-33
+68-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:52:13-33
 69            android:theme="@style/Theme.NasaClient" />
-69-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:54:13-52
+69-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:53:13-52
 70        <activity
-70-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:55:9-65:20
+70-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:54:9-63:20
 71            android:name="com.example.nasaclient.MainActivity"
-71-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:56:13-41
+71-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:55:13-41
 72            android:exported="true"
-72-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:57:13-36
+72-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:56:13-36
 73            android:label="@string/app_name"
-73-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:58:13-45
+73-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:57:13-45
 74            android:theme="@style/Theme.NasaClient" >
-74-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:59:13-52
+74-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:58:13-52
 75            <intent-filter>
-75-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:60:13-64:29
+75-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:59:13-62:29
 76                <action android:name="android.intent.action.MAIN" />
-76-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:17-69
-76-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:25-66
+76-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:60:17-69
+76-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:60:25-66
 77
 78                <category android:name="android.intent.category.LAUNCHER" />
-78-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:63:17-77
-78-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:63:27-74
+78-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:17-77
+78-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:27-74
 79            </intent-filter>
 80        </activity>
 81        <activity
-81-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:66:9-70:55
+81-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:64:9-68:55
 82            android:name="com.example.nasaclient.LoginActivity"
-82-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:67:13-42
+82-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:65:13-42
 83            android:exported="false"
-83-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:68:13-37
+83-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:66:13-37
 84            android:label="Login"
-84-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:69:13-34
+84-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:67:13-34
 85            android:theme="@style/Theme.NasaClient" />
-85-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:70:13-52
+85-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:68:13-52
 86        <activity
-86-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:71:9-75:55
+86-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:69:9-73:55
 87            android:name="com.example.nasaclient.EditProfileActivity"
-87-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:72:13-48
+87-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:70:13-48
 88            android:exported="false"
-88-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:73:13-37
+88-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:71:13-37
 89            android:label="Edit Profile"
-89-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:74:13-41
+89-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:72:13-41
 90            android:theme="@style/Theme.NasaClient" />
-90-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:75:13-52
+90-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:73:13-52
 91        <activity
-91-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:76:9-80:55
+91-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:74:9-78:55
 92            android:name="com.example.nasaclient.ChangePasswordActivity"
-92-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:77:13-51
+92-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:75:13-51
 93            android:exported="false"
-93-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:78:13-37
+93-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:76:13-37
 94            android:label="Change Password"
-94-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:79:13-44
+94-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:77:13-44
 95            android:theme="@style/Theme.NasaClient" />
-95-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:80:13-52
+95-->D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:78:13-52
 96        <activity
 96-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Admin\.gradle\caches\transforms-4\4a3a484c43b5c8bb47eecfbb1cda6d8e\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
 97            android:name="androidx.compose.ui.tooling.PreviewActivity"

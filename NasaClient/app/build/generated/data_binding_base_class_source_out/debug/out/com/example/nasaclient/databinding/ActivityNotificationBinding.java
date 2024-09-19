@@ -21,7 +21,7 @@ public final class ActivityNotificationBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnback;
 
   @NonNull
   public final LinearLayout main;
@@ -29,10 +29,10 @@ public final class ActivityNotificationBinding implements ViewBinding {
   @NonNull
   public final TextView titleText;
 
-  private ActivityNotificationBinding(@NonNull LinearLayout rootView, @NonNull Button button,
+  private ActivityNotificationBinding(@NonNull LinearLayout rootView, @NonNull Button btnback,
       @NonNull LinearLayout main, @NonNull TextView titleText) {
     this.rootView = rootView;
-    this.button = button;
+    this.btnback = btnback;
     this.main = main;
     this.titleText = titleText;
   }
@@ -64,9 +64,9 @@ public final class ActivityNotificationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnback;
+      Button btnback = ViewBindings.findChildViewById(rootView, id);
+      if (btnback == null) {
         break missingId;
       }
 
@@ -78,7 +78,7 @@ public final class ActivityNotificationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNotificationBinding((LinearLayout) rootView, button, main, titleText);
+      return new ActivityNotificationBinding((LinearLayout) rootView, btnback, main, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

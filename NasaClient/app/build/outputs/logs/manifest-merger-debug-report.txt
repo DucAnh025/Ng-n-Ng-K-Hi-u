@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-83:12
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:1-80:12
 MERGED from [androidx.databinding:viewbinding:8.4.0] C:\Users\Admin\.gradle\caches\transforms-4\425c90955a847a006b96058c8272ff15\transformed\viewbinding-8.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.5] C:\Users\Admin\.gradle\caches\transforms-4\a830b1996b1420803473be86d8b4bd34\transformed\navigation-common-2.7.5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.5] C:\Users\Admin\.gradle\caches\transforms-4\819c9d8f84b455c75de49970a8c08f48\transformed\navigation-runtime-2.7.5\AndroidManifest.xml:17:1-22:12
@@ -92,8 +92,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Admin\.
 	xmlns:android
 		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:5:5-81:19
-INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:5:5-81:19
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:4:5-79:19
+INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:4:5-79:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Admin\.gradle\caches\transforms-4\573dac0923a95f3cd66e83937d90c216\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Admin\.gradle\caches\transforms-4\573dac0923a95f3cd66e83937d90c216\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Admin\.gradle\caches\transforms-4\4a3a484c43b5c8bb47eecfbb1cda6d8e\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -121,153 +121,153 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\transforms-4\8ccc58a798042cb4a718f4dc62a5342b\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:9:9-41
 	android:fullBackupContent
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:7:9-54
 	android:roundIcon
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:10:9-54
 	tools:targetApi
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:13:9-29
 	android:icon
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:12:9-48
 	android:dataExtractionRules
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:6:9-65
 activity#com.example.nasaclient.PlanetInfoActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:15:9-17:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:17:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:16:13-47
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:15:13-47
 activity#com.example.nasaclient.ui.theme.PlanetInfoActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:18:9-20:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:19:13-56
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:18:13-56
 activity#com.example.nasaclient.HelpAndSupportActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:21:9-23:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:23:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:22:13-51
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:21:13-51
 activity#com.example.nasaclient.LegalAndPoliciesActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:25:13-53
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:24:13-53
 activity#com.example.nasaclient.LanguageActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:27:9-29:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:28:13-45
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:27:13-45
 activity#com.example.nasaclient.SecurityActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:30:9-32:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:31:13-45
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:30:13-45
 activity#com.example.nasaclient.NotificationActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:33:9-35:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:33:13-49
 activity#com.example.nasaclient.NotificationSettingActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:36:9-38:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:38:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:36:13-56
 activity#com.example.nasaclient.OnBoardingActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:39:9-41:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:40:13-47
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:39:13-47
 activity#com.example.nasaclient.PlanetActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:42:9-44:40
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:43:13-43
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:42:13-43
 activity#com.example.nasaclient.SettingActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:45:9-49:55
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:44:9-48:55
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:48:13-36
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:47:13-36
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:46:13-37
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:49:13-52
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:48:13-52
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:46:13-44
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:45:13-44
 activity#com.example.nasaclient.NewsActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:50:9-54:55
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:49:9-53:55
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:53:13-33
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:52:13-33
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:51:13-37
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:54:13-52
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:53:13-52
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:51:13-41
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:50:13-41
 activity#com.example.nasaclient.MainActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:55:9-65:20
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:54:9-63:20
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:58:13-45
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:57:13-45
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:57:13-36
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:56:13-36
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:59:13-52
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:58:13-52
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:56:13-41
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:55:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:60:13-64:29
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:59:13-62:29
 action#android.intent.action.MAIN
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:17-69
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:60:17-69
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:25-66
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:60:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:63:17-77
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:63:27-74
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:61:27-74
 activity#com.example.nasaclient.LoginActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:66:9-70:55
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:64:9-68:55
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:69:13-34
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:67:13-34
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:68:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:66:13-37
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:70:13-52
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:68:13-52
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:67:13-42
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:65:13-42
 activity#com.example.nasaclient.EditProfileActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:71:9-75:55
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:69:9-73:55
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:74:13-41
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:72:13-41
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:73:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:71:13-37
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:75:13-52
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:73:13-52
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:72:13-48
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:70:13-48
 activity#com.example.nasaclient.ChangePasswordActivity
-ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:76:9-80:55
+ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:74:9-78:55
 	android:label
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:79:13-44
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:77:13-44
 	android:exported
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:78:13-37
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:76:13-37
 	android:theme
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:80:13-52
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:78:13-52
 	android:name
-		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:77:13-51
+		ADDED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml:75:13-51
 uses-sdk
 INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\D-Downloads\Nasa-Client\NasaClient\app\src\main\AndroidManifest.xml

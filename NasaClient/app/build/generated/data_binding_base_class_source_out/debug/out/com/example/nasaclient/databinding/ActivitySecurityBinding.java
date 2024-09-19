@@ -22,7 +22,7 @@ public final class ActivitySecurityBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnback;
 
   @NonNull
   public final LinearLayout main;
@@ -39,11 +39,11 @@ public final class ActivitySecurityBinding implements ViewBinding {
   @NonNull
   public final TextView titleText;
 
-  private ActivitySecurityBinding(@NonNull LinearLayout rootView, @NonNull Button button,
+  private ActivitySecurityBinding(@NonNull LinearLayout rootView, @NonNull Button btnback,
       @NonNull LinearLayout main, @NonNull Switch switch1, @NonNull Switch switch2,
       @NonNull Switch switch3, @NonNull TextView titleText) {
     this.rootView = rootView;
-    this.button = button;
+    this.btnback = btnback;
     this.main = main;
     this.switch1 = switch1;
     this.switch2 = switch2;
@@ -78,9 +78,9 @@ public final class ActivitySecurityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnback;
+      Button btnback = ViewBindings.findChildViewById(rootView, id);
+      if (btnback == null) {
         break missingId;
       }
 
@@ -110,7 +110,7 @@ public final class ActivitySecurityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySecurityBinding((LinearLayout) rootView, button, main, switch1, switch2,
+      return new ActivitySecurityBinding((LinearLayout) rootView, btnback, main, switch1, switch2,
           switch3, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -91,17 +91,17 @@ public class PlanetActivity extends FragmentActivity {
             intent.putExtra("PLANET_INFO", "Venus gaming");
         } else if (viewId == R.id.saturnExploreButton) {
             Log.d(TAG, "Saturn button clicked");
-            intent.putExtra("PLANET_NAME", "Mercury");
+            intent.putExtra("PLANET_NAME", "Saturn");
             intent.putExtra("PLANET_IMAGE", R.drawable.saturn);
             intent.putExtra("PLANET_INFO", "Saturnus");
         } else if (viewId == R.id.neptuneExploreButton) {
             Log.d(TAG, "Neptune button clicked");
-            intent.putExtra("PLANET_NAME", "Mercury");
+            intent.putExtra("PLANET_NAME", "Neptune");
             intent.putExtra("PLANET_IMAGE", R.drawable.neptune);
             intent.putExtra("PLANET_INFO", "Dau an neptune");
         } else if (viewId == R.id.uranusExploreButton) {
             Log.d(TAG, "Uranus button clicked");
-            intent.putExtra("PLANET_NAME", "Mercury");
+            intent.putExtra("PLANET_NAME", "Uranus");
             intent.putExtra("PLANET_IMAGE", R.drawable.uranus);
             intent.putExtra("PLANET_INFO", "Ubuntu");
         } else {

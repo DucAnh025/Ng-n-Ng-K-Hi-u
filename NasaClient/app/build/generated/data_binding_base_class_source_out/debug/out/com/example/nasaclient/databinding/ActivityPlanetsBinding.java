@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -23,6 +24,9 @@ public final class ActivityPlanetsBinding implements ViewBinding {
 
   @NonNull
   public final Button earthExploreButton;
+
+  @NonNull
+  public final EditText etSearch;
 
   @NonNull
   public final Button marsExploreButton;
@@ -85,7 +89,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
   public final TextView venusTitleText;
 
   private ActivityPlanetsBinding(@NonNull ScrollView rootView, @NonNull Button earthExploreButton,
-      @NonNull Button marsExploreButton, @NonNull ImageView marsImage,
+      @NonNull EditText etSearch, @NonNull Button marsExploreButton, @NonNull ImageView marsImage,
       @NonNull TextView marsTitleText, @NonNull Button mercuryExploreButton,
       @NonNull ImageView mercuryImage, @NonNull TextView mercuryTitleText,
       @NonNull Button neptuneExploreButton, @NonNull ImageView neptuneImage,
@@ -97,6 +101,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
       @NonNull ImageView venusImage, @NonNull TextView venusTitleText) {
     this.rootView = rootView;
     this.earthExploreButton = earthExploreButton;
+    this.etSearch = etSearch;
     this.marsExploreButton = marsExploreButton;
     this.marsImage = marsImage;
     this.marsTitleText = marsTitleText;
@@ -149,6 +154,12 @@ public final class ActivityPlanetsBinding implements ViewBinding {
       id = R.id.earthExploreButton;
       Button earthExploreButton = ViewBindings.findChildViewById(rootView, id);
       if (earthExploreButton == null) {
+        break missingId;
+      }
+
+      id = R.id.etSearch;
+      EditText etSearch = ViewBindings.findChildViewById(rootView, id);
+      if (etSearch == null) {
         break missingId;
       }
 
@@ -272,7 +283,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlanetsBinding((ScrollView) rootView, earthExploreButton,
+      return new ActivityPlanetsBinding((ScrollView) rootView, earthExploreButton, etSearch,
           marsExploreButton, marsImage, marsTitleText, mercuryExploreButton, mercuryImage,
           mercuryTitleText, neptuneExploreButton, neptuneImage, neptuneTitleText, planetImage,
           saturnExploreButton, saturnImage, saturnTitleText, titleText, uranusExploreButton,

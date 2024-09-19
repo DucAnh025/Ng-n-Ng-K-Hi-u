@@ -3043,6 +3043,8 @@ drawable avd_show_password
 drawable back_button
 drawable background_image
 drawable background_moon
+drawable bg02
+drawable bg03
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3069,8 +3071,10 @@ drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_changepassword
+drawable ic_circle_notif
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_drawer
 drawable ic_edit_profile
 drawable ic_email
 drawable ic_google
@@ -3081,6 +3085,7 @@ drawable ic_language
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_legal
+drawable ic_location
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3091,6 +3096,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_news
 drawable ic_notif
+drawable ic_notification
 drawable ic_notifsetting
 drawable ic_password
 drawable ic_person
@@ -3182,6 +3188,7 @@ drawable notify_panel_notification_icon_bg
 drawable onboarding_img1
 drawable onboarding_img2
 drawable onboarding_img3
+drawable pictureoftheday
 drawable rectangle_button
 drawable rounded_button
 drawable rounded_button_black
@@ -3307,6 +3314,7 @@ id bounceEnd
 id bounceStart
 id btnGoToNews
 id btnSignIn
+id btnSignUp
 id btnSignUpFacebook
 id btnSignUpGoogle
 id btn_change_password
@@ -3320,7 +3328,6 @@ id btn_notification
 id btn_notification_setting
 id btn_save_changes
 id btn_security
-id btnback
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3421,6 +3428,9 @@ id et_email
 id et_full_name
 id et_phone_number
 id et_username
+id eventDate
+id eventImage
+id eventTitle
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3475,7 +3485,6 @@ id inward
 id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
-id ivProfileIcon
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3486,7 +3495,6 @@ id legacy
 id line1
 id line3
 id linear
-id linearLayout
 id listMode
 id list_item
 id locale
@@ -3521,6 +3529,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id menuIcon
 id mercuryExploreButton
 id mercuryImage
 id mercuryTitleText
@@ -3749,6 +3758,7 @@ id titleDividerNoCustom
 id titleText
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3764,18 +3774,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvBreakingNews
-id tvCosmicDust
-id tvDensity
 id tvForgotPassword
-id tvGeomagnetic
-id tvLocation
 id tvLoginSubtitle
 id tvLoginTitle
-id tvNotificationBadge
 id tvSignUp
-id tvSolarRadiation
-id tvSolarWindSpeed
-id tvWelcome
 id tv_setting_title
 id unchecked
 id uniform
@@ -3958,6 +3960,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_event
 layout item_slider
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

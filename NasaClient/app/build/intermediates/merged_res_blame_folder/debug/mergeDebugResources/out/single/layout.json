@@ -1,78 +1,86 @@
 [
     {
-        "merged": "com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_planet_info.xml",
-        "source": "com.example.nasaclient.app-main-67:/layout/activity_planet_info.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_help_and_support.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_help_and_support.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_help_and_support.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_help_and_support.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_notification.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_notification.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-64:/layout/item_event.xml",
+        "source": "com.example.nasaclient.app-main-67:/layout/item_event.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_setting.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_setting.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_language.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_language.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_with_nav.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_with_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_security.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_security.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_edit_profile.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_edit_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_setting.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_setting.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_planets.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_planets.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_notification_setting.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_notification_setting.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_planet_info.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_planet_info.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_news.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_news.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\item_event.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\item_event.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_planet_info.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_planet_info.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_news.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_news.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_planets.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_planets.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_onboarding01.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_onboarding01.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\item_slider.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\item_slider.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\item_slider.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\item_slider.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_onboarding01.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_onboarding01.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_edit_profile.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_edit_profile.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_main.xml",
+        "source": "com.example.nasaclient.app-main-67:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_change_password.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_change_password.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_security.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_security.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_signup.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_signup.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_language.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_language.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_with_nav.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_with_nav.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_change_password.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_change_password.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_legal_and_policies.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_legal_and_policies.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_legal_and_policies.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_legal_and_policies.xml"
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_notification_setting.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_notification_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-mergeDebugResources-64:\\layout\\activity_notification.xml",
+        "source": "C:\\Users\\Duc Anh\\.gradle\\daemon\\8.7\\com.example.nasaclient.app-main-67:\\layout\\activity_notification.xml"
     }
 ]

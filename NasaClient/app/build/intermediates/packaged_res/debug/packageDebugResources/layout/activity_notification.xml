@@ -6,18 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="16dp"
     tools:context=".NotificationSettingActivity">
 
     <!-- Back to Setting -->
-    <Button
-        android:id="@+id/btnback"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/ic_arrow_left"
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Back"
-        android:text=""
-        tools:ignore="HardcodedText" />
+        android:src="@drawable/ic_arrow_left"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <!-- Title of layout(Notifications) -->
     <TextView
@@ -29,7 +30,7 @@
         android:layout_marginBottom="16dp"
         android:text="Notifications"
         android:textColor="@android:color/black"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
 

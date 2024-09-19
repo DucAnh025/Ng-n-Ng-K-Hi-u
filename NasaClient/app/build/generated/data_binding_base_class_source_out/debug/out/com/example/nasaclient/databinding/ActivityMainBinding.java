@@ -5,11 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nasaclient.R;
@@ -19,64 +18,28 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final RelativeLayout idHome;
+  public final CoordinatorLayout idHome;
 
   @NonNull
-  public final ImageView ivProfileIcon;
+  public final ImageView menuIcon;
 
   @NonNull
-  public final LinearLayout linearLayout;
+  public final Toolbar toolbar;
 
-  @NonNull
-  public final TextView tvCosmicDust;
-
-  @NonNull
-  public final TextView tvDensity;
-
-  @NonNull
-  public final TextView tvGeomagnetic;
-
-  @NonNull
-  public final TextView tvLocation;
-
-  @NonNull
-  public final TextView tvNotificationBadge;
-
-  @NonNull
-  public final TextView tvSolarRadiation;
-
-  @NonNull
-  public final TextView tvSolarWindSpeed;
-
-  @NonNull
-  public final TextView tvWelcome;
-
-  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull RelativeLayout idHome,
-      @NonNull ImageView ivProfileIcon, @NonNull LinearLayout linearLayout,
-      @NonNull TextView tvCosmicDust, @NonNull TextView tvDensity, @NonNull TextView tvGeomagnetic,
-      @NonNull TextView tvLocation, @NonNull TextView tvNotificationBadge,
-      @NonNull TextView tvSolarRadiation, @NonNull TextView tvSolarWindSpeed,
-      @NonNull TextView tvWelcome) {
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull CoordinatorLayout idHome, @NonNull ImageView menuIcon, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.idHome = idHome;
-    this.ivProfileIcon = ivProfileIcon;
-    this.linearLayout = linearLayout;
-    this.tvCosmicDust = tvCosmicDust;
-    this.tvDensity = tvDensity;
-    this.tvGeomagnetic = tvGeomagnetic;
-    this.tvLocation = tvLocation;
-    this.tvNotificationBadge = tvNotificationBadge;
-    this.tvSolarRadiation = tvSolarRadiation;
-    this.tvSolarWindSpeed = tvSolarWindSpeed;
-    this.tvWelcome = tvWelcome;
+    this.menuIcon = menuIcon;
+    this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -101,71 +64,21 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      RelativeLayout idHome = (RelativeLayout) rootView;
+      CoordinatorLayout idHome = (CoordinatorLayout) rootView;
 
-      id = R.id.ivProfileIcon;
-      ImageView ivProfileIcon = ViewBindings.findChildViewById(rootView, id);
-      if (ivProfileIcon == null) {
+      id = R.id.menuIcon;
+      ImageView menuIcon = ViewBindings.findChildViewById(rootView, id);
+      if (menuIcon == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
         break missingId;
       }
 
-      id = R.id.tvCosmicDust;
-      TextView tvCosmicDust = ViewBindings.findChildViewById(rootView, id);
-      if (tvCosmicDust == null) {
-        break missingId;
-      }
-
-      id = R.id.tvDensity;
-      TextView tvDensity = ViewBindings.findChildViewById(rootView, id);
-      if (tvDensity == null) {
-        break missingId;
-      }
-
-      id = R.id.tvGeomagnetic;
-      TextView tvGeomagnetic = ViewBindings.findChildViewById(rootView, id);
-      if (tvGeomagnetic == null) {
-        break missingId;
-      }
-
-      id = R.id.tvLocation;
-      TextView tvLocation = ViewBindings.findChildViewById(rootView, id);
-      if (tvLocation == null) {
-        break missingId;
-      }
-
-      id = R.id.tvNotificationBadge;
-      TextView tvNotificationBadge = ViewBindings.findChildViewById(rootView, id);
-      if (tvNotificationBadge == null) {
-        break missingId;
-      }
-
-      id = R.id.tvSolarRadiation;
-      TextView tvSolarRadiation = ViewBindings.findChildViewById(rootView, id);
-      if (tvSolarRadiation == null) {
-        break missingId;
-      }
-
-      id = R.id.tvSolarWindSpeed;
-      TextView tvSolarWindSpeed = ViewBindings.findChildViewById(rootView, id);
-      if (tvSolarWindSpeed == null) {
-        break missingId;
-      }
-
-      id = R.id.tvWelcome;
-      TextView tvWelcome = ViewBindings.findChildViewById(rootView, id);
-      if (tvWelcome == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((RelativeLayout) rootView, idHome, ivProfileIcon, linearLayout,
-          tvCosmicDust, tvDensity, tvGeomagnetic, tvLocation, tvNotificationBadge, tvSolarRadiation,
-          tvSolarWindSpeed, tvWelcome);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, idHome, menuIcon, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

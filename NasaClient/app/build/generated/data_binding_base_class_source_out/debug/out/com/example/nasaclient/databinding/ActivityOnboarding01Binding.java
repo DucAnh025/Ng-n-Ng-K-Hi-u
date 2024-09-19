@@ -24,7 +24,7 @@ public final class ActivityOnboarding01Binding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView alreadyHaveAccountText;
+  public final Button alreadyHaveAccountText;
 
   @NonNull
   public final Button createAccountButton;
@@ -54,7 +54,7 @@ public final class ActivityOnboarding01Binding implements ViewBinding {
   public final ViewPager2 viewPager;
 
   private ActivityOnboarding01Binding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView alreadyHaveAccountText, @NonNull Button createAccountButton,
+      @NonNull Button alreadyHaveAccountText, @NonNull Button createAccountButton,
       @NonNull View dot1, @NonNull View dot2, @NonNull View dot3,
       @NonNull LinearLayout dotIndicator, @NonNull CardView imageCard,
       @NonNull TextView subtitleText, @NonNull TextView titleText, @NonNull ViewPager2 viewPager) {
@@ -99,7 +99,7 @@ public final class ActivityOnboarding01Binding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.alreadyHaveAccountText;
-      TextView alreadyHaveAccountText = ViewBindings.findChildViewById(rootView, id);
+      Button alreadyHaveAccountText = ViewBindings.findChildViewById(rootView, id);
       if (alreadyHaveAccountText == null) {
         break missingId;
       }

@@ -4,7 +4,7 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,7 +21,7 @@ public final class ActivityNotificationBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnback;
+  public final ImageButton backButton;
 
   @NonNull
   public final LinearLayout main;
@@ -29,10 +29,10 @@ public final class ActivityNotificationBinding implements ViewBinding {
   @NonNull
   public final TextView titleText;
 
-  private ActivityNotificationBinding(@NonNull LinearLayout rootView, @NonNull Button btnback,
-      @NonNull LinearLayout main, @NonNull TextView titleText) {
+  private ActivityNotificationBinding(@NonNull LinearLayout rootView,
+      @NonNull ImageButton backButton, @NonNull LinearLayout main, @NonNull TextView titleText) {
     this.rootView = rootView;
-    this.btnback = btnback;
+    this.backButton = backButton;
     this.main = main;
     this.titleText = titleText;
   }
@@ -64,9 +64,9 @@ public final class ActivityNotificationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnback;
-      Button btnback = ViewBindings.findChildViewById(rootView, id);
-      if (btnback == null) {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
         break missingId;
       }
 
@@ -78,7 +78,7 @@ public final class ActivityNotificationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNotificationBinding((LinearLayout) rootView, btnback, main, titleText);
+      return new ActivityNotificationBinding((LinearLayout) rootView, backButton, main, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -52,7 +52,7 @@
             android:name="com.example.nasaclient.NotificationSettingActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nasaclient.OnBoardingActivity"
+            android:name="com.example.nasaclient.MainActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nasaclient.PlanetActivity"
@@ -68,7 +68,7 @@
             android:label="News"
             android:theme="@style/Theme.NasaClient" />
         <activity
-            android:name="com.example.nasaclient.MainActivity"
+            android:name="com.example.nasaclient.OnBoardingActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.NasaClient" >
@@ -92,6 +92,11 @@
             android:name="com.example.nasaclient.ChangePasswordActivity"
             android:exported="false"
             android:label="Change Password"
+            android:theme="@style/Theme.NasaClient" />
+        <activity
+            android:name="com.example.nasaclient.SignupActivity"
+            android:exported="false"
+            android:label="Sign Up"
             android:theme="@style/Theme.NasaClient" />
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"

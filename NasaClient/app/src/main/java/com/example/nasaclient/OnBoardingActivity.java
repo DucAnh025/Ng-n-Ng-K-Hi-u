@@ -1,7 +1,9 @@
 package com.example.nasaclient;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,6 +43,17 @@ public class OnBoardingActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 updateDots(position);
             }
+        });
+
+        Button createAccountButton = findViewById(R.id.createAccountButton);
+        createAccountButton.setOnClickListener(v -> {
+            Intent intent = new Intent(OnBoardingActivity.this, SignupActivity.class);
+            startActivity(intent);
+        });
+        Button alreadyHaveAccountText = findViewById(R.id.alreadyHaveAccountText);
+        alreadyHaveAccountText.setOnClickListener(v -> {
+            Intent intent = new Intent(OnBoardingActivity.this, LoginActivity.class);
+            startActivity(intent);
         });
     }
 

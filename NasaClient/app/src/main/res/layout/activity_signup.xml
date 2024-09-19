@@ -77,12 +77,12 @@
 
         <!-- Alternative Sign In Options -->
         <Button
-            android:id="@+id/btnSignIn"
+            android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:background="@drawable/rounded_button_black"
-            android:text="Sign In"
+            android:text="Sign Up"
             android:textColor="#FFFFFF"
             android:layout_marginTop="30dp"/>
 

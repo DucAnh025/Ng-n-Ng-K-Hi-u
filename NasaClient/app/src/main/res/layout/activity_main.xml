@@ -1,113 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/idHome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
-    android:padding="0dp">
+    android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/tvLocation"
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Moon, Solar System"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
 
-    <!-- Profile Icon -->
-    <ImageView
-        android:id="@+id/ivProfileIcon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_profile" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
 
-    <!-- Notification Badge -->
-    <TextView
-        android:id="@+id/tvNotificationBadge"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignTop="@id/ivProfileIcon"
-        android:layout_alignEnd="@id/ivProfileIcon"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/circle_notification"
-        android:gravity="center"
-        android:text="3"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <!-- Welcome Text -->
-    <TextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvLocation"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:text="Hi, Hendrix"
-        android:textColor="#FFFFFF"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/menuIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_drawer" />
 
-    <!-- Data Information -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvWelcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_location"
+                        android:layout_gravity="center_vertical" />
 
-        <TextView
-            android:id="@+id/tvSolarRadiation"
-            android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ha Noi, VN"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginStart="4dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_notification"
+                        android:contentDescription="Notification" />
+
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/ic_circle_notif"
+                        android:text="3"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_gravity="top|end" />
+                </FrameLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Solar Radiation: 30 kW/m²/day"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tvSolarWindSpeed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Solar Wind Speed: 396 km/s"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#1A1A1A"
+                app:cardElevation="0dp">
 
-        <TextView
-            android:id="@+id/tvGeomagnetic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Geomagnetic: 3"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvCosmicDust"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cosmic Dust: 10 kg/yr"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pictureoftheday"
+                        android:contentDescription="Picture of the Day" />
 
-        <TextView
-            android:id="@+id/tvDensity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Density: 1.09 p/cm³"
-            android:textColor="#FFFFFF"
-            android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Picture of the Day"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_margin="16dp" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NASA will “lead the emplacement of capabilities that support lunar missions beyond cislunar space.”"
+                        android:textColor="#CCCCCC"
+                        android:textSize="14sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp" />
 
-    </LinearLayout>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/rounded_button_white"
+                        android:backgroundTint="@android:color/white"
+                        android:text="View Detail"
+                        app:cornerRadius="24dp"
+                        android:textColor="@android:color/white"
+                        app:backgroundTint="@android:color/transparent"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp">
 
-</RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Pictures"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/item_event"/>
+                    <include layout="@layout/item_event" />
+                    <include layout="@layout/item_event" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

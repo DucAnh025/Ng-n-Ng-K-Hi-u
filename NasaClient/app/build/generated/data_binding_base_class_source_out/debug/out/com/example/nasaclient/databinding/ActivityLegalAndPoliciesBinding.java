@@ -4,7 +4,7 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -30,16 +30,16 @@ public final class ActivityLegalAndPoliciesBinding implements ViewBinding {
   public final TextView Term;
 
   @NonNull
-  public final Button btnback;
+  public final ImageButton backButton;
 
   private ActivityLegalAndPoliciesBinding(@NonNull ScrollView rootView,
       @NonNull TextView ChangesServiceTerms, @NonNull TextView LegalAndPolicies,
-      @NonNull TextView Term, @NonNull Button btnback) {
+      @NonNull TextView Term, @NonNull ImageButton backButton) {
     this.rootView = rootView;
     this.ChangesServiceTerms = ChangesServiceTerms;
     this.LegalAndPolicies = LegalAndPolicies;
     this.Term = Term;
-    this.btnback = btnback;
+    this.backButton = backButton;
   }
 
   @Override
@@ -87,14 +87,14 @@ public final class ActivityLegalAndPoliciesBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnback;
-      Button btnback = ViewBindings.findChildViewById(rootView, id);
-      if (btnback == null) {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
         break missingId;
       }
 
       return new ActivityLegalAndPoliciesBinding((ScrollView) rootView, ChangesServiceTerms,
-          LegalAndPolicies, Term, btnback);
+          LegalAndPolicies, Term, backButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

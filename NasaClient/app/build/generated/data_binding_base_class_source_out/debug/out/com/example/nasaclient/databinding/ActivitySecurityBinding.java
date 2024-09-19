@@ -4,7 +4,7 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -22,7 +22,7 @@ public final class ActivitySecurityBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnback;
+  public final ImageButton backButton;
 
   @NonNull
   public final LinearLayout main;
@@ -39,11 +39,11 @@ public final class ActivitySecurityBinding implements ViewBinding {
   @NonNull
   public final TextView titleText;
 
-  private ActivitySecurityBinding(@NonNull LinearLayout rootView, @NonNull Button btnback,
+  private ActivitySecurityBinding(@NonNull LinearLayout rootView, @NonNull ImageButton backButton,
       @NonNull LinearLayout main, @NonNull Switch switch1, @NonNull Switch switch2,
       @NonNull Switch switch3, @NonNull TextView titleText) {
     this.rootView = rootView;
-    this.btnback = btnback;
+    this.backButton = backButton;
     this.main = main;
     this.switch1 = switch1;
     this.switch2 = switch2;
@@ -78,9 +78,9 @@ public final class ActivitySecurityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnback;
-      Button btnback = ViewBindings.findChildViewById(rootView, id);
-      if (btnback == null) {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
         break missingId;
       }
 
@@ -110,8 +110,8 @@ public final class ActivitySecurityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySecurityBinding((LinearLayout) rootView, btnback, main, switch1, switch2,
-          switch3, titleText);
+      return new ActivitySecurityBinding((LinearLayout) rootView, backButton, main, switch1,
+          switch2, switch3, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

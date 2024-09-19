@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import androidx.annotation.NonNull;
@@ -22,10 +23,10 @@ public final class ActivityEditProfileBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final Button btnSaveChanges;
+  public final ImageButton backButton;
 
   @NonNull
-  public final Button btnback;
+  public final Button btnSaveChanges;
 
   @NonNull
   public final EditText etEmail;
@@ -42,13 +43,13 @@ public final class ActivityEditProfileBinding implements ViewBinding {
   @NonNull
   public final ImageView profileImage;
 
-  private ActivityEditProfileBinding(@NonNull ScrollView rootView, @NonNull Button btnSaveChanges,
-      @NonNull Button btnback, @NonNull EditText etEmail, @NonNull EditText etFullName,
+  private ActivityEditProfileBinding(@NonNull ScrollView rootView, @NonNull ImageButton backButton,
+      @NonNull Button btnSaveChanges, @NonNull EditText etEmail, @NonNull EditText etFullName,
       @NonNull EditText etPhoneNumber, @NonNull EditText etUsername,
       @NonNull ImageView profileImage) {
     this.rootView = rootView;
+    this.backButton = backButton;
     this.btnSaveChanges = btnSaveChanges;
-    this.btnback = btnback;
     this.etEmail = etEmail;
     this.etFullName = etFullName;
     this.etPhoneNumber = etPhoneNumber;
@@ -83,15 +84,15 @@ public final class ActivityEditProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_save_changes;
-      Button btnSaveChanges = ViewBindings.findChildViewById(rootView, id);
-      if (btnSaveChanges == null) {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
         break missingId;
       }
 
-      id = R.id.btnback;
-      Button btnback = ViewBindings.findChildViewById(rootView, id);
-      if (btnback == null) {
+      id = R.id.btn_save_changes;
+      Button btnSaveChanges = ViewBindings.findChildViewById(rootView, id);
+      if (btnSaveChanges == null) {
         break missingId;
       }
 
@@ -125,8 +126,8 @@ public final class ActivityEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEditProfileBinding((ScrollView) rootView, btnSaveChanges, btnback, etEmail,
-          etFullName, etPhoneNumber, etUsername, profileImage);
+      return new ActivityEditProfileBinding((ScrollView) rootView, backButton, btnSaveChanges,
+          etEmail, etFullName, etPhoneNumber, etUsername, profileImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -22,7 +22,7 @@ public final class ActivitySignupBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final Button btnSignIn;
+  public final Button btnSignUp;
 
   @NonNull
   public final Button btnSignUpFacebook;
@@ -48,13 +48,13 @@ public final class ActivitySignupBinding implements ViewBinding {
   @NonNull
   public final TextView tvSignUp;
 
-  private ActivitySignupBinding(@NonNull ScrollView rootView, @NonNull Button btnSignIn,
+  private ActivitySignupBinding(@NonNull ScrollView rootView, @NonNull Button btnSignUp,
       @NonNull Button btnSignUpFacebook, @NonNull Button btnSignUpGoogle,
       @NonNull EditText etConfirmPassword, @NonNull EditText etEmail, @NonNull EditText etPassword,
       @NonNull TextView tvLoginSubtitle, @NonNull TextView tvLoginTitle,
       @NonNull TextView tvSignUp) {
     this.rootView = rootView;
-    this.btnSignIn = btnSignIn;
+    this.btnSignUp = btnSignUp;
     this.btnSignUpFacebook = btnSignUpFacebook;
     this.btnSignUpGoogle = btnSignUpGoogle;
     this.etConfirmPassword = etConfirmPassword;
@@ -92,9 +92,9 @@ public final class ActivitySignupBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnSignIn;
-      Button btnSignIn = ViewBindings.findChildViewById(rootView, id);
-      if (btnSignIn == null) {
+      id = R.id.btnSignUp;
+      Button btnSignUp = ViewBindings.findChildViewById(rootView, id);
+      if (btnSignUp == null) {
         break missingId;
       }
 
@@ -146,7 +146,7 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignupBinding((ScrollView) rootView, btnSignIn, btnSignUpFacebook,
+      return new ActivitySignupBinding((ScrollView) rootView, btnSignUp, btnSignUpFacebook,
           btnSignUpGoogle, etConfirmPassword, etEmail, etPassword, tvLoginSubtitle, tvLoginTitle,
           tvSignUp);
     }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,10 +24,10 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnSaveChanges;
+  public final ImageButton backButton;
 
   @NonNull
-  public final Button btnback;
+  public final Button btnSaveChanges;
 
   @NonNull
   public final TextInputEditText confirmPassword;
@@ -44,13 +45,13 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
   public final TextView titleText;
 
   private ActivityChangePasswordBinding(@NonNull LinearLayout rootView,
-      @NonNull Button btnSaveChanges, @NonNull Button btnback,
+      @NonNull ImageButton backButton, @NonNull Button btnSaveChanges,
       @NonNull TextInputEditText confirmPassword, @NonNull TextInputLayout confirmPasswordLayout,
       @NonNull TextInputEditText newPassword, @NonNull TextInputLayout newPasswordLayout,
       @NonNull TextView titleText) {
     this.rootView = rootView;
+    this.backButton = backButton;
     this.btnSaveChanges = btnSaveChanges;
-    this.btnback = btnback;
     this.confirmPassword = confirmPassword;
     this.confirmPasswordLayout = confirmPasswordLayout;
     this.newPassword = newPassword;
@@ -85,15 +86,15 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_save_changes;
-      Button btnSaveChanges = ViewBindings.findChildViewById(rootView, id);
-      if (btnSaveChanges == null) {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
         break missingId;
       }
 
-      id = R.id.btnback;
-      Button btnback = ViewBindings.findChildViewById(rootView, id);
-      if (btnback == null) {
+      id = R.id.btn_save_changes;
+      Button btnSaveChanges = ViewBindings.findChildViewById(rootView, id);
+      if (btnSaveChanges == null) {
         break missingId;
       }
 
@@ -127,7 +128,7 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChangePasswordBinding((LinearLayout) rootView, btnSaveChanges, btnback,
+      return new ActivityChangePasswordBinding((LinearLayout) rootView, backButton, btnSaveChanges,
           confirmPassword, confirmPasswordLayout, newPassword, newPasswordLayout, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);

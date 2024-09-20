@@ -109,6 +109,11 @@
             android:label="Notif"
             android:theme="@style/Theme.NasaClient" />
         <activity
+            android:name="com.example.nasaclient.SeeAllFragment"
+            android:exported="false"
+            android:label="Change"
+            android:theme="@style/Theme.NasaClient" />
+        <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
         <activity

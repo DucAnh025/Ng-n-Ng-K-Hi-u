@@ -106,8 +106,10 @@ id dot3
 id dotIndicator
 id earthExploreButton
 id etConfirmPassword
+id etConfirmPasswordLayout
 id etEmail
 id etPassword
+id etPasswordLayout
 id etSearch
 id etSearch01
 id et_email

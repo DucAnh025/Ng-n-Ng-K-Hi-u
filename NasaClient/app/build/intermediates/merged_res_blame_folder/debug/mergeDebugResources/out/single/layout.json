@@ -56,12 +56,12 @@
         "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/fragment_see_all.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_change_password.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_change_password.xml"
-    },
-    {
         "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_planets.xml",
         "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_planets.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/activity_change_password.xml",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/activity_change_password.xml"
     },
     {
         "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-64:/layout/item_slider.xml",

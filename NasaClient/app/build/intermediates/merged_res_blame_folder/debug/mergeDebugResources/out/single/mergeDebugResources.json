@@ -60,12 +60,12 @@
         "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/layout_fragment_notif_main.xml.flat",
         "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/layout/fragment_notif_main.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/drawable_ic_help.xml.flat",
@@ -144,12 +144,12 @@
         "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/menu_bottom_nav_menu.xml.flat",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/menu/bottom_nav_menu.xml"
-    },
-    {
         "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/menu_bottom_nav_menu.xml.flat",
+        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-67:/menu/bottom_nav_menu.xml"
     },
     {
         "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-debug-65:/drawable_rounded_button.webp.flat",

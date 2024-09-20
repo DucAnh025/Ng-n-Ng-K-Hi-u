@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nasaclient.R;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -31,13 +33,19 @@ public final class ActivitySignupBinding implements ViewBinding {
   public final Button btnSignUpGoogle;
 
   @NonNull
-  public final EditText etConfirmPassword;
+  public final TextInputEditText etConfirmPassword;
+
+  @NonNull
+  public final TextInputLayout etConfirmPasswordLayout;
 
   @NonNull
   public final EditText etEmail;
 
   @NonNull
-  public final EditText etPassword;
+  public final TextInputEditText etPassword;
+
+  @NonNull
+  public final TextInputLayout etPasswordLayout;
 
   @NonNull
   public final TextView tvLoginSubtitle;
@@ -50,7 +58,9 @@ public final class ActivitySignupBinding implements ViewBinding {
 
   private ActivitySignupBinding(@NonNull ScrollView rootView, @NonNull Button btnSignUp,
       @NonNull Button btnSignUpFacebook, @NonNull Button btnSignUpGoogle,
-      @NonNull EditText etConfirmPassword, @NonNull EditText etEmail, @NonNull EditText etPassword,
+      @NonNull TextInputEditText etConfirmPassword,
+      @NonNull TextInputLayout etConfirmPasswordLayout, @NonNull EditText etEmail,
+      @NonNull TextInputEditText etPassword, @NonNull TextInputLayout etPasswordLayout,
       @NonNull TextView tvLoginSubtitle, @NonNull TextView tvLoginTitle,
       @NonNull TextView tvSignUp) {
     this.rootView = rootView;
@@ -58,8 +68,10 @@ public final class ActivitySignupBinding implements ViewBinding {
     this.btnSignUpFacebook = btnSignUpFacebook;
     this.btnSignUpGoogle = btnSignUpGoogle;
     this.etConfirmPassword = etConfirmPassword;
+    this.etConfirmPasswordLayout = etConfirmPasswordLayout;
     this.etEmail = etEmail;
     this.etPassword = etPassword;
+    this.etPasswordLayout = etPasswordLayout;
     this.tvLoginSubtitle = tvLoginSubtitle;
     this.tvLoginTitle = tvLoginTitle;
     this.tvSignUp = tvSignUp;
@@ -111,8 +123,14 @@ public final class ActivitySignupBinding implements ViewBinding {
       }
 
       id = R.id.etConfirmPassword;
-      EditText etConfirmPassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etConfirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (etConfirmPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.etConfirmPasswordLayout;
+      TextInputLayout etConfirmPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (etConfirmPasswordLayout == null) {
         break missingId;
       }
 
@@ -123,8 +141,14 @@ public final class ActivitySignupBinding implements ViewBinding {
       }
 
       id = R.id.etPassword;
-      EditText etPassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.etPasswordLayout;
+      TextInputLayout etPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (etPasswordLayout == null) {
         break missingId;
       }
 
@@ -147,8 +171,8 @@ public final class ActivitySignupBinding implements ViewBinding {
       }
 
       return new ActivitySignupBinding((ScrollView) rootView, btnSignUp, btnSignUpFacebook,
-          btnSignUpGoogle, etConfirmPassword, etEmail, etPassword, tvLoginSubtitle, tvLoginTitle,
-          tvSignUp);
+          btnSignUpGoogle, etConfirmPassword, etConfirmPasswordLayout, etEmail, etPassword,
+          etPasswordLayout, tvLoginSubtitle, tvLoginTitle, tvSignUp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

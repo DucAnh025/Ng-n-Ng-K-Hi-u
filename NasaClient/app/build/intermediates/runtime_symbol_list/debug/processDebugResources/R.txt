@@ -3428,8 +3428,10 @@ int id enterAlways 0x7f0800d7
 int id enterAlwaysCollapsed 0x7f0800d8
 int id escape 0x7f0800d9
 int id etConfirmPassword 0x7f0800da
+int id etConfirmPasswordLayout 0x7f080265
 int id etEmail 0x7f0800db
 int id etPassword 0x7f0800dc
+int id etPasswordLayout 0x7f080266
 int id etSearch 0x7f0800dd
 int id etSearch01 0x7f0800de
 int id et_email 0x7f0800df

@@ -3429,8 +3429,10 @@ id enterAlways
 id enterAlwaysCollapsed
 id escape
 id etConfirmPassword
+id etConfirmPasswordLayout
 id etEmail
 id etPassword
+id etPasswordLayout
 id etSearch
 id etSearch01
 id et_email

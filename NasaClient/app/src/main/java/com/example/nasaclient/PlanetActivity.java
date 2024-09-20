@@ -27,7 +27,7 @@ public class PlanetActivity extends FragmentActivity {
                 startActivity(new Intent(this, MainActivity.class));
                 return true;
             } else if (itemId == R.id.planet) {
-                // We're already on the Planet screen, so no need to start a new activity
+
                 return true;
             } else if (itemId == R.id.news) {
                 startActivity(new Intent(this, NewsActivity.class));

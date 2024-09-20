@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nasaclient.R;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -34,7 +36,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final EditText etEmail;
 
   @NonNull
-  public final EditText etPassword;
+  public final TextInputEditText etPassword;
+
+  @NonNull
+  public final TextInputLayout etPasswordLayout;
 
   @NonNull
   public final TextView tvForgotPassword;
@@ -50,15 +55,16 @@ public final class ActivityLoginBinding implements ViewBinding {
 
   private ActivityLoginBinding(@NonNull ScrollView rootView, @NonNull Button btnSignIn,
       @NonNull Button btnSignUpFacebook, @NonNull Button btnSignUpGoogle, @NonNull EditText etEmail,
-      @NonNull EditText etPassword, @NonNull TextView tvForgotPassword,
-      @NonNull TextView tvLoginSubtitle, @NonNull TextView tvLoginTitle,
-      @NonNull TextView tvSignUp) {
+      @NonNull TextInputEditText etPassword, @NonNull TextInputLayout etPasswordLayout,
+      @NonNull TextView tvForgotPassword, @NonNull TextView tvLoginSubtitle,
+      @NonNull TextView tvLoginTitle, @NonNull TextView tvSignUp) {
     this.rootView = rootView;
     this.btnSignIn = btnSignIn;
     this.btnSignUpFacebook = btnSignUpFacebook;
     this.btnSignUpGoogle = btnSignUpGoogle;
     this.etEmail = etEmail;
     this.etPassword = etPassword;
+    this.etPasswordLayout = etPasswordLayout;
     this.tvForgotPassword = tvForgotPassword;
     this.tvLoginSubtitle = tvLoginSubtitle;
     this.tvLoginTitle = tvLoginTitle;
@@ -117,8 +123,14 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       id = R.id.etPassword;
-      EditText etPassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.etPasswordLayout;
+      TextInputLayout etPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (etPasswordLayout == null) {
         break missingId;
       }
 
@@ -147,8 +159,8 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       return new ActivityLoginBinding((ScrollView) rootView, btnSignIn, btnSignUpFacebook,
-          btnSignUpGoogle, etEmail, etPassword, tvForgotPassword, tvLoginSubtitle, tvLoginTitle,
-          tvSignUp);
+          btnSignUpGoogle, etEmail, etPassword, etPasswordLayout, tvForgotPassword, tvLoginSubtitle,
+          tvLoginTitle, tvSignUp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

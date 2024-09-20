@@ -26,6 +26,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageButton btnNotifMain;
 
   @NonNull
+  public final Button btnSeeAll;
+
+  @NonNull
   public final Button btnViewDetail;
 
   @NonNull
@@ -38,10 +41,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull ImageButton btnNotifMain, @NonNull Button btnViewDetail,
+      @NonNull ImageButton btnNotifMain, @NonNull Button btnSeeAll, @NonNull Button btnViewDetail,
       @NonNull CoordinatorLayout idHome, @NonNull ImageView menuIcon, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnNotifMain = btnNotifMain;
+    this.btnSeeAll = btnSeeAll;
     this.btnViewDetail = btnViewDetail;
     this.idHome = idHome;
     this.menuIcon = menuIcon;
@@ -81,6 +85,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnSeeAll;
+      Button btnSeeAll = ViewBindings.findChildViewById(rootView, id);
+      if (btnSeeAll == null) {
+        break missingId;
+      }
+
       id = R.id.btnViewDetail;
       Button btnViewDetail = ViewBindings.findChildViewById(rootView, id);
       if (btnViewDetail == null) {
@@ -101,8 +111,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, btnNotifMain, btnViewDetail,
-          idHome, menuIcon, toolbar);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, btnNotifMain, btnSeeAll,
+          btnViewDetail, idHome, menuIcon, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

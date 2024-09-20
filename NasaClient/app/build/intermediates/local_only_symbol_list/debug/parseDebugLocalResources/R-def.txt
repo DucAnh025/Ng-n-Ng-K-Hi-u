@@ -1,6 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+color accentColor
 color black
+color primaryColor
+color primaryDarkColor
 color purple_200
 color purple_500
 color purple_700
@@ -76,6 +79,7 @@ id alreadyHaveAccountText
 id backButton
 id bottomNavigationView
 id btnNotif_Main
+id btnSeeAll
 id btnSignIn
 id btnSignUp
 id btnSignUpFacebook
@@ -105,6 +109,7 @@ id etConfirmPassword
 id etEmail
 id etPassword
 id etSearch
+id etSearch01
 id et_email
 id et_full_name
 id et_phone_number
@@ -149,6 +154,7 @@ id switch2
 id switch3
 id switch4
 id titlePlanets
+id titleSeeAll
 id titleText
 id toolbar
 id tvForgotPassword
@@ -182,6 +188,7 @@ layout activity_signup
 layout activity_with_nav
 layout fragment_detail
 layout fragment_notif_main
+layout fragment_see_all
 layout item_event
 layout item_notification
 layout item_slider

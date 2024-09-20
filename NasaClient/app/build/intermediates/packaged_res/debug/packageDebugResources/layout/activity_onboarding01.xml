@@ -83,6 +83,7 @@
             android:background="@android:color/darker_gray" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/createAccountButton"
         android:layout_width="0dp"
@@ -92,6 +93,7 @@
         android:layout_marginBottom="16dp"
         android:text="Create Account"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@id/alreadyHaveAccountText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

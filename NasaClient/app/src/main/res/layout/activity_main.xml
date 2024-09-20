@@ -105,7 +105,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="250dp"
+                        android:layout_height="280dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pictureoftheday"
                         android:contentDescription="Picture of the Day" />
@@ -134,7 +134,7 @@
                         android:layout_width="120dp"
                         android:layout_height="40dp"
                         android:layout_margin="16dp"
-                        android:background="@drawable/rounded_button_white"
+                        android:background="@drawable/rounded_button_black"
                         android:text="View Detail"
                         app:cornerRadius="24dp"
                         android:textColor="@android:color/white"
@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:layout_marginBottom="8dp">
+                android:layout_marginBottom="3dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -158,13 +158,16 @@
                     android:textStyle="bold"
                     android:layout_alignParentStart="true" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btnSeeAll"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="1dp"
+                    android:backgroundTint="@android:color/white"
                     android:text="See All"
-                    android:textColor="#CCCCCC"
-                    android:textSize="14sp"
-                    android:layout_alignParentEnd="true" />
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
             </RelativeLayout>
 
             <HorizontalScrollView

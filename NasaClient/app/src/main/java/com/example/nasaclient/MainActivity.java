@@ -60,5 +60,15 @@ public class MainActivity extends FragmentActivity {
                 startActivity(intent);
             }
         });
+        Button btnSeeAll = findViewById(R.id.btnSeeAll);
+        btnSeeAll.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(MainActivity.this,SeeAllFragment.class);
+                startActivity(intent);
+            }
+        });
     }
 }

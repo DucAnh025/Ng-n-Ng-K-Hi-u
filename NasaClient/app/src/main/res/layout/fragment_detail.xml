@@ -20,7 +20,8 @@
             android:contentDescription="Back"
             android:src="@drawable/ic_arrow_left"
             tools:ignore="TouchTargetSizeCheck"
-            android:padding="16dp"/>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
 
         <TextView
             android:id="@+id/titleText"

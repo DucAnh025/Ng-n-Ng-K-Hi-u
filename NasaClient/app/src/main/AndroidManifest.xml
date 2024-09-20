@@ -91,5 +91,10 @@
             android:exported="false"
             android:label="Notif"
             android:theme="@style/Theme.NasaClient" />
+        <activity
+            android:name=".SeeAllFragment"
+            android:exported="false"
+            android:label="Change"
+            android:theme="@style/Theme.NasaClient" />
     </application>
 </manifest>

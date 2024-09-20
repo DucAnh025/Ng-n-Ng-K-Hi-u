@@ -4,6 +4,8 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +23,12 @@ public final class ActivityMainBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
+  public final ImageButton btnNotifMain;
+
+  @NonNull
+  public final Button btnViewDetail;
+
+  @NonNull
   public final CoordinatorLayout idHome;
 
   @NonNull
@@ -30,8 +38,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull ImageButton btnNotifMain, @NonNull Button btnViewDetail,
       @NonNull CoordinatorLayout idHome, @NonNull ImageView menuIcon, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.btnNotifMain = btnNotifMain;
+    this.btnViewDetail = btnViewDetail;
     this.idHome = idHome;
     this.menuIcon = menuIcon;
     this.toolbar = toolbar;
@@ -64,6 +75,18 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnNotif_Main;
+      ImageButton btnNotifMain = ViewBindings.findChildViewById(rootView, id);
+      if (btnNotifMain == null) {
+        break missingId;
+      }
+
+      id = R.id.btnViewDetail;
+      Button btnViewDetail = ViewBindings.findChildViewById(rootView, id);
+      if (btnViewDetail == null) {
+        break missingId;
+      }
+
       CoordinatorLayout idHome = (CoordinatorLayout) rootView;
 
       id = R.id.menuIcon;
@@ -78,7 +101,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, idHome, menuIcon, toolbar);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, btnNotifMain, btnViewDetail,
+          idHome, menuIcon, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

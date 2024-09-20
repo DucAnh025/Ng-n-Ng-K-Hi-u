@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:1-95:12
 MERGED from [androidx.databinding:viewbinding:8.4.0] C:\Users\Duc Anh\.gradle\caches\transforms-4\425c90955a847a006b96058c8272ff15\transformed\viewbinding-8.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.5] C:\Users\Duc Anh\.gradle\caches\transforms-4\a830b1996b1420803473be86d8b4bd34\transformed\navigation-common-2.7.5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.5] C:\Users\Duc Anh\.gradle\caches\transforms-4\819c9d8f84b455c75de49970a8c08f48\transformed\navigation-runtime-2.7.5\AndroidManifest.xml:17:1-22:12
@@ -92,8 +92,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Duc Anh
 	xmlns:android
 		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:4:5-84:19
-INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:4:5-84:19
+ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:4:5-94:19
+INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:4:5-94:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Duc Anh\.gradle\caches\transforms-4\573dac0923a95f3cd66e83937d90c216\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Duc Anh\.gradle\caches\transforms-4\573dac0923a95f3cd66e83937d90c216\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Duc Anh\.gradle\caches\transforms-4\4a3a484c43b5c8bb47eecfbb1cda6d8e\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -278,6 +278,26 @@ ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:79:9-83:55
 		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:83:13-52
 	android:name
 		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:80:13-43
+activity#com.example.nasaclient.DetailFragment
+ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:84:9-88:55
+	android:label
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:87:13-35
+	android:exported
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:86:13-37
+	android:theme
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:88:13-52
+	android:name
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:85:13-43
+activity#com.example.nasaclient.NotifMainFragment
+ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:89:9-93:55
+	android:label
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:92:13-34
+	android:exported
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:91:13-37
+	android:theme
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:93:13-52
+	android:name
+		ADDED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml:90:13-46
 uses-sdk
 INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Nasa2109\NasaClient\app\src\main\AndroidManifest.xml

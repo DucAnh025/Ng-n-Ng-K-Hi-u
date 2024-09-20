@@ -68,6 +68,9 @@ public final class ActivityPlanetsBinding implements ViewBinding {
   public final TextView saturnTitleText;
 
   @NonNull
+  public final TextView titlePlanets;
+
+  @NonNull
   public final TextView titleText;
 
   @NonNull
@@ -95,10 +98,11 @@ public final class ActivityPlanetsBinding implements ViewBinding {
       @NonNull Button neptuneExploreButton, @NonNull ImageView neptuneImage,
       @NonNull TextView neptuneTitleText, @NonNull ImageView planetImage,
       @NonNull Button saturnExploreButton, @NonNull ImageView saturnImage,
-      @NonNull TextView saturnTitleText, @NonNull TextView titleText,
-      @NonNull Button uranusExploreButton, @NonNull ImageView uranusImage,
-      @NonNull TextView uranusTitleText, @NonNull Button venusExploreButton,
-      @NonNull ImageView venusImage, @NonNull TextView venusTitleText) {
+      @NonNull TextView saturnTitleText, @NonNull TextView titlePlanets,
+      @NonNull TextView titleText, @NonNull Button uranusExploreButton,
+      @NonNull ImageView uranusImage, @NonNull TextView uranusTitleText,
+      @NonNull Button venusExploreButton, @NonNull ImageView venusImage,
+      @NonNull TextView venusTitleText) {
     this.rootView = rootView;
     this.earthExploreButton = earthExploreButton;
     this.etSearch = etSearch;
@@ -115,6 +119,7 @@ public final class ActivityPlanetsBinding implements ViewBinding {
     this.saturnExploreButton = saturnExploreButton;
     this.saturnImage = saturnImage;
     this.saturnTitleText = saturnTitleText;
+    this.titlePlanets = titlePlanets;
     this.titleText = titleText;
     this.uranusExploreButton = uranusExploreButton;
     this.uranusImage = uranusImage;
@@ -241,6 +246,12 @@ public final class ActivityPlanetsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.titlePlanets;
+      TextView titlePlanets = ViewBindings.findChildViewById(rootView, id);
+      if (titlePlanets == null) {
+        break missingId;
+      }
+
       id = R.id.titleText;
       TextView titleText = ViewBindings.findChildViewById(rootView, id);
       if (titleText == null) {
@@ -286,8 +297,9 @@ public final class ActivityPlanetsBinding implements ViewBinding {
       return new ActivityPlanetsBinding((ScrollView) rootView, earthExploreButton, etSearch,
           marsExploreButton, marsImage, marsTitleText, mercuryExploreButton, mercuryImage,
           mercuryTitleText, neptuneExploreButton, neptuneImage, neptuneTitleText, planetImage,
-          saturnExploreButton, saturnImage, saturnTitleText, titleText, uranusExploreButton,
-          uranusImage, uranusTitleText, venusExploreButton, venusImage, venusTitleText);
+          saturnExploreButton, saturnImage, saturnTitleText, titlePlanets, titleText,
+          uranusExploreButton, uranusImage, uranusTitleText, venusExploreButton, venusImage,
+          venusTitleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

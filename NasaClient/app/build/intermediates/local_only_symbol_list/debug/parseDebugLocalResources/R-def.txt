@@ -13,6 +13,7 @@ drawable background_moon
 drawable bg02
 drawable bg03
 drawable circle_background
+drawable circle_background_01
 drawable circle_notification
 drawable earth
 drawable ic_arrow_left
@@ -30,6 +31,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_legal
 drawable ic_location
+drawable ic_mail
 drawable ic_more
 drawable ic_news
 drawable ic_notif
@@ -57,6 +59,7 @@ drawable rounded_button
 drawable rounded_button_black
 drawable rounded_button_white
 drawable rounded_edittext
+drawable rounded_image_background
 drawable saturn
 drawable search_background
 drawable square_button
@@ -72,11 +75,12 @@ id Term
 id alreadyHaveAccountText
 id backButton
 id bottomNavigationView
-id btnGoToNews
+id btnNotif_Main
 id btnSignIn
 id btnSignUp
 id btnSignUpFacebook
 id btnSignUpGoogle
+id btnViewDetail
 id btn_change_password
 id btn_edit_profile
 id btn_help_support
@@ -125,6 +129,9 @@ id neptuneTitleText
 id newPassword
 id newPasswordLayout
 id news
+id notificationIcon
+id notificationTime
+id notificationTitle
 id planet
 id planetImage
 id planetImageView
@@ -141,9 +148,9 @@ id switch1
 id switch2
 id switch3
 id switch4
+id titlePlanets
 id titleText
 id toolbar
-id tvBreakingNews
 id tvForgotPassword
 id tvLoginSubtitle
 id tvLoginTitle
@@ -173,7 +180,10 @@ layout activity_security
 layout activity_setting
 layout activity_signup
 layout activity_with_nav
+layout fragment_detail
+layout fragment_notif_main
 layout item_event
+layout item_notification
 layout item_slider
 menu bottom_nav_menu
 mipmap ic_launcher

@@ -4,9 +4,8 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,28 +18,24 @@ import java.lang.String;
 
 public final class ActivityNewsBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
-
-  @NonNull
-  public final Button btnGoToNews;
+  private final ScrollView rootView;
 
   @NonNull
   public final EditText etSearch;
 
   @NonNull
-  public final TextView tvBreakingNews;
+  public final TextView titleText;
 
-  private ActivityNewsBinding(@NonNull RelativeLayout rootView, @NonNull Button btnGoToNews,
-      @NonNull EditText etSearch, @NonNull TextView tvBreakingNews) {
+  private ActivityNewsBinding(@NonNull ScrollView rootView, @NonNull EditText etSearch,
+      @NonNull TextView titleText) {
     this.rootView = rootView;
-    this.btnGoToNews = btnGoToNews;
     this.etSearch = etSearch;
-    this.tvBreakingNews = tvBreakingNews;
+    this.titleText = titleText;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -65,26 +60,19 @@ public final class ActivityNewsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnGoToNews;
-      Button btnGoToNews = ViewBindings.findChildViewById(rootView, id);
-      if (btnGoToNews == null) {
-        break missingId;
-      }
-
       id = R.id.etSearch;
       EditText etSearch = ViewBindings.findChildViewById(rootView, id);
       if (etSearch == null) {
         break missingId;
       }
 
-      id = R.id.tvBreakingNews;
-      TextView tvBreakingNews = ViewBindings.findChildViewById(rootView, id);
-      if (tvBreakingNews == null) {
+      id = R.id.titleText;
+      TextView titleText = ViewBindings.findChildViewById(rootView, id);
+      if (titleText == null) {
         break missingId;
       }
 
-      return new ActivityNewsBinding((RelativeLayout) rootView, btnGoToNews, etSearch,
-          tvBreakingNews);
+      return new ActivityNewsBinding((ScrollView) rootView, etSearch, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

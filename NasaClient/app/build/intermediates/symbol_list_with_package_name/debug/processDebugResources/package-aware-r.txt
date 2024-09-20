@@ -3054,6 +3054,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable circle_background
+drawable circle_background_01
 drawable circle_notification
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3089,6 +3090,7 @@ drawable ic_location
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_mail
 drawable ic_more
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -3194,6 +3196,7 @@ drawable rounded_button
 drawable rounded_button_black
 drawable rounded_button_white
 drawable rounded_edittext
+drawable rounded_image_background
 drawable saturn
 drawable search_background
 drawable square_button
@@ -3312,11 +3315,12 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnGoToNews
+id btnNotif_Main
 id btnSignIn
 id btnSignUp
 id btnSignUpFacebook
 id btnSignUpGoogle
+id btnViewDetail
 id btn_change_password
 id btn_edit_profile
 id btn_help_support
@@ -3590,6 +3594,9 @@ id noState
 id none
 id normal
 id north
+id notificationIcon
+id notificationTime
+id notificationTitle
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3755,6 +3762,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titlePlanets
 id titleText
 id title_template
 id toggle
@@ -3773,7 +3781,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvBreakingNews
 id tvForgotPassword
 id tvLoginSubtitle
 id tvLoginTitle
@@ -3958,9 +3965,12 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_detail
+layout fragment_notif_main
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_event
+layout item_notification
 layout item_slider
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

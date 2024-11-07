@@ -6,21 +6,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nasaclient.R;
+import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final DrawerLayout rootView;
 
   @NonNull
   public final ImageButton btnNotifMain;
@@ -32,29 +33,34 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnViewDetail;
 
   @NonNull
+  public final DrawerLayout drawerLayout;
+
+  @NonNull
   public final CoordinatorLayout idHome;
 
   @NonNull
-  public final ImageView menuIcon;
+  public final NavigationView navigationView;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull ImageButton btnNotifMain, @NonNull Button btnSeeAll, @NonNull Button btnViewDetail,
-      @NonNull CoordinatorLayout idHome, @NonNull ImageView menuIcon, @NonNull Toolbar toolbar) {
+  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull ImageButton btnNotifMain,
+      @NonNull Button btnSeeAll, @NonNull Button btnViewDetail, @NonNull DrawerLayout drawerLayout,
+      @NonNull CoordinatorLayout idHome, @NonNull NavigationView navigationView,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnNotifMain = btnNotifMain;
     this.btnSeeAll = btnSeeAll;
     this.btnViewDetail = btnViewDetail;
+    this.drawerLayout = drawerLayout;
     this.idHome = idHome;
-    this.menuIcon = menuIcon;
+    this.navigationView = navigationView;
     this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -97,11 +103,17 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      CoordinatorLayout idHome = (CoordinatorLayout) rootView;
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
-      id = R.id.menuIcon;
-      ImageView menuIcon = ViewBindings.findChildViewById(rootView, id);
-      if (menuIcon == null) {
+      id = R.id.idHome;
+      CoordinatorLayout idHome = ViewBindings.findChildViewById(rootView, id);
+      if (idHome == null) {
+        break missingId;
+      }
+
+      id = R.id.navigationView;
+      NavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
+      if (navigationView == null) {
         break missingId;
       }
 
@@ -111,8 +123,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, btnNotifMain, btnSeeAll,
-          btnViewDetail, idHome, menuIcon, toolbar);
+      return new ActivityMainBinding((DrawerLayout) rootView, btnNotifMain, btnSeeAll,
+          btnViewDetail, drawerLayout, idHome, navigationView, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

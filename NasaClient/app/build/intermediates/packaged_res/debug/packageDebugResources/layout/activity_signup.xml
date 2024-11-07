@@ -49,6 +49,19 @@
             android:minHeight="48dp"
             android:padding="12dp"
             android:textSize="16dp" />
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Your Full Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textSize="16dp" />
 
         <!-- Password Input -->
         <com.google.android.material.textfield.TextInputLayout

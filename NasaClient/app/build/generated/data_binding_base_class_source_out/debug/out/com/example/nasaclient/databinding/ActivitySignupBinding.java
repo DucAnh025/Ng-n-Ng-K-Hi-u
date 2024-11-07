@@ -42,6 +42,9 @@ public final class ActivitySignupBinding implements ViewBinding {
   public final EditText etEmail;
 
   @NonNull
+  public final EditText etFullName;
+
+  @NonNull
   public final TextInputEditText etPassword;
 
   @NonNull
@@ -60,9 +63,9 @@ public final class ActivitySignupBinding implements ViewBinding {
       @NonNull Button btnSignUpFacebook, @NonNull Button btnSignUpGoogle,
       @NonNull TextInputEditText etConfirmPassword,
       @NonNull TextInputLayout etConfirmPasswordLayout, @NonNull EditText etEmail,
-      @NonNull TextInputEditText etPassword, @NonNull TextInputLayout etPasswordLayout,
-      @NonNull TextView tvLoginSubtitle, @NonNull TextView tvLoginTitle,
-      @NonNull TextView tvSignUp) {
+      @NonNull EditText etFullName, @NonNull TextInputEditText etPassword,
+      @NonNull TextInputLayout etPasswordLayout, @NonNull TextView tvLoginSubtitle,
+      @NonNull TextView tvLoginTitle, @NonNull TextView tvSignUp) {
     this.rootView = rootView;
     this.btnSignUp = btnSignUp;
     this.btnSignUpFacebook = btnSignUpFacebook;
@@ -70,6 +73,7 @@ public final class ActivitySignupBinding implements ViewBinding {
     this.etConfirmPassword = etConfirmPassword;
     this.etConfirmPasswordLayout = etConfirmPasswordLayout;
     this.etEmail = etEmail;
+    this.etFullName = etFullName;
     this.etPassword = etPassword;
     this.etPasswordLayout = etPasswordLayout;
     this.tvLoginSubtitle = tvLoginSubtitle;
@@ -140,6 +144,12 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etFullName;
+      EditText etFullName = ViewBindings.findChildViewById(rootView, id);
+      if (etFullName == null) {
+        break missingId;
+      }
+
       id = R.id.etPassword;
       TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
@@ -171,8 +181,8 @@ public final class ActivitySignupBinding implements ViewBinding {
       }
 
       return new ActivitySignupBinding((ScrollView) rootView, btnSignUp, btnSignUpFacebook,
-          btnSignUpGoogle, etConfirmPassword, etConfirmPasswordLayout, etEmail, etPassword,
-          etPasswordLayout, tvLoginSubtitle, tvLoginTitle, tvSignUp);
+          btnSignUpGoogle, etConfirmPassword, etConfirmPasswordLayout, etEmail, etFullName,
+          etPassword, etPasswordLayout, tvLoginSubtitle, tvLoginTitle, tvSignUp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

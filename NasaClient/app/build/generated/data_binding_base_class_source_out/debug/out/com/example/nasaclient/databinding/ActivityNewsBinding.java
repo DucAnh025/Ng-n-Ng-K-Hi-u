@@ -4,11 +4,11 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.ScrollView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nasaclient.R;
@@ -18,24 +18,24 @@ import java.lang.String;
 
 public final class ActivityNewsBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final EditText etSearch;
+  public final RecyclerView recyclerView;
 
   @NonNull
   public final TextView titleText;
 
-  private ActivityNewsBinding(@NonNull ScrollView rootView, @NonNull EditText etSearch,
+  private ActivityNewsBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView recyclerView,
       @NonNull TextView titleText) {
     this.rootView = rootView;
-    this.etSearch = etSearch;
+    this.recyclerView = recyclerView;
     this.titleText = titleText;
   }
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -60,9 +60,9 @@ public final class ActivityNewsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.etSearch;
-      EditText etSearch = ViewBindings.findChildViewById(rootView, id);
-      if (etSearch == null) {
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
         break missingId;
       }
 
@@ -72,7 +72,7 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewsBinding((ScrollView) rootView, etSearch, titleText);
+      return new ActivityNewsBinding((LinearLayout) rootView, recyclerView, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

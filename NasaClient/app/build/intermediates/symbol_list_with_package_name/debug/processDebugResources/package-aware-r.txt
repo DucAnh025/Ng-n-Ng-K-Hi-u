@@ -3065,6 +3065,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable earth
+drawable error_image
 drawable ic_arrow_back_black_24
 drawable ic_arrow_left
 drawable ic_arrow_right
@@ -3090,6 +3091,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_legal
 drawable ic_location
+drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3194,6 +3196,7 @@ drawable onboarding_img1
 drawable onboarding_img2
 drawable onboarding_img3
 drawable pictureoftheday
+drawable placeholder_image
 drawable rectangle_button
 drawable rounded_button
 drawable rounded_button_black
@@ -3380,6 +3383,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dateTextView
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3387,6 +3391,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descriptionTextView
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3412,6 +3417,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_layout
 id dropdown_menu
 id earthExploreButton
 id easeIn
@@ -3431,6 +3437,7 @@ id escape
 id etConfirmPassword
 id etConfirmPasswordLayout
 id etEmail
+id etFullName
 id etPassword
 id etPasswordLayout
 id etSearch
@@ -3464,6 +3471,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3486,6 +3494,7 @@ id ignore
 id ignoreRequest
 id image
 id imageCard
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3540,7 +3549,6 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
-id menuIcon
 id mercuryExploreButton
 id mercuryImage
 id mercuryTitleText
@@ -3578,8 +3586,15 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_chat
 id nav_controller_view_tag
+id nav_help
+id nav_history
 id nav_host_fragment_container
+id nav_logout
+id nav_settings
+id nav_voucher
+id navigationView
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3654,6 +3669,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id report_drawn
 id reverseSawtooth
 id right
@@ -3772,6 +3788,7 @@ id titleDividerNoCustom
 id titlePlanets
 id titleSeeAll
 id titleText
+id titleTextView
 id title_template
 id toggle
 id toolbar
@@ -3957,6 +3974,7 @@ layout activity_security
 layout activity_setting
 layout activity_signup
 layout activity_with_nav
+layout badge_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3979,6 +3997,7 @@ layout fragment_see_all
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_event
+layout item_news
 layout item_notification
 layout item_slider
 layout m3_alert_dialog
@@ -4032,6 +4051,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -4043,6 +4063,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4098,6 +4119,8 @@ string close_sheet
 string default_error_message
 string default_popup_window_title
 string dest_title
+string drawer_close
+string drawer_open
 string dropdown_menu
 string error_a11y_label
 string error_icon_content_description

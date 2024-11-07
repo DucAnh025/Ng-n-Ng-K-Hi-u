@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.nasaclient.app-mergeDebugResources-63:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.example.nasaclient.app-mergeDebugResources-64:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/Users/buiquangtrung/.gradle/caches/transforms-4/06c088b7aa5bb6ab24a431f9c5006195/transformed/appcompat-1.7.0/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "/Users/ducanh/.gradle/caches/transforms-4/06c088b7aa5bb6ab24a431f9c5006195/transformed/appcompat-1.7.0/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

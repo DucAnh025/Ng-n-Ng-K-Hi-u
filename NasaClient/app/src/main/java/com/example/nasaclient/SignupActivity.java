@@ -3,23 +3,31 @@ package com.example.nasaclient;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
+
 import com.example.nasaclient.databinding.ActivitySignupBinding;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 public class SignupActivity extends AppCompatActivity {
 
     private ActivitySignupBinding binding;
-    private RequestQueue requestQueue;
+    private OkHttpClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +35,13 @@ public class SignupActivity extends AppCompatActivity {
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        requestQueue = Volley.newRequestQueue(this);
+        // Initialize OkHttpClient
+        client = new OkHttpClient();
 
+        // Set up sign-up button click listener
         binding.btnSignUp.setOnClickListener(v -> registerUser());
 
+        // Set up login text click listener to navigate to login screen
         binding.tvSignUp.setOnClickListener(v -> {
             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
             startActivity(intent);
@@ -43,102 +54,101 @@ public class SignupActivity extends AppCompatActivity {
         String password = binding.etPassword.getText().toString();
         String confirmPassword = binding.etConfirmPassword.getText().toString();
 
-        // Input validation
+        // Validate input
         if (fullName.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
             Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        if (!isValidEmail(email)) {
+            Toast.makeText(this, "Invalid email format", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!isValidPassword(password)) {
+            Toast.makeText(this, "Password must be at least 8 characters and contain one uppercase letter.", Toast.LENGTH_LONG).show();
+            return;
+        }
+
         if (!password.equals(confirmPassword)) {
             Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
             return;
         }
 
+        // Set API endpoint
+        String url = "https://boxgateway.kozow.com/register";
 
-        String url = "https://boxgateway.kozow.com/register";  // Correct API endpoint
-
-        JSONObject requestBody = new JSONObject();
+        // Create JSON body for the request
+        JSONObject requestBodyJson = new JSONObject();
         try {
-            requestBody.put("full_name", fullName);
-            requestBody.put("email", email);
-            requestBody.put("password", password);
+            requestBodyJson.put("full_name", fullName);
+            requestBodyJson.put("email", email);
+            requestBodyJson.put("password", password);
         } catch (JSONException e) {
-            e.printStackTrace(); // Handle JSON exception
+            e.printStackTrace();
             Toast.makeText(this, "Error creating request", Toast.LENGTH_SHORT).show();
-            return; // Stop further execution if JSON creation fails
+            return;
         }
 
+        // Set JSON media type
+        RequestBody body = RequestBody.create(requestBodyJson.toString(), MediaType.parse("application/json; charset=utf-8"));
 
+        // Build the request
+        Request request = new Request.Builder()
+                .url(url)
+                .post(body)
+                .build();
 
-        Log.d("SignupRequest", requestBody.toString());  // Log the request body for debugging
+        // Make asynchronous call
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.e("SignupError", "Network request failed: " + e.getMessage());
+                runOnUiThread(() -> Toast.makeText(SignupActivity.this, "Network error. Please try again.", Toast.LENGTH_SHORT).show());
+            }
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, requestBody,
-                response -> {
-                    Log.d("SignupResponse", response.toString()); // Log the response
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    // Parse response JSON
+                    String responseData = response.body().string();
                     try {
-                        // Check 'status' inside the response
-                        if (response.has("status") && response.getBoolean("status")) { // Check if "status" key exists and its value
+                        JSONObject jsonResponse = new JSONObject(responseData);
 
-                            Toast.makeText(SignupActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                            // Navigate to login after successful signup
-                            startActivity(new Intent(SignupActivity.this, LoginActivity.class));
-                            finish(); // Finish signup activity
+                        // Check if signup was successful based on status in JSON
+                        if (jsonResponse.has("status") && jsonResponse.getBoolean("status")) {
+                            runOnUiThread(() -> {
+                                Toast.makeText(SignupActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+                                finish();
+                            });
                         } else {
-
-                            String errorMessage = response.has("message") ? response.getString("message") : "Registration failed";
-                            Toast.makeText(SignupActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
-
+                            String errorMessage = jsonResponse.has("message") ? jsonResponse.getString("message") : "Registration failed";
+                            runOnUiThread(() -> Toast.makeText(SignupActivity.this, errorMessage, Toast.LENGTH_SHORT).show());
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
-                        Toast.makeText(SignupActivity.this, "Failed to parse response", Toast.LENGTH_SHORT).show();
+                        runOnUiThread(() -> Toast.makeText(SignupActivity.this, "Failed to parse response", Toast.LENGTH_SHORT).show());
                     }
-                },
-                error -> {
-                    Log.e("SignupError", error.toString());
-                    if (error.networkResponse != null) {
-                        Log.e("SignupError", "Status Code: " + error.networkResponse.statusCode);
-
-                        if(error.networkResponse.data != null) {
-                            String errorBody = new String(error.networkResponse.data);
-                            Log.e("SignupError", "Error Body: " + errorBody);
-
-                            try {
-                                JSONObject errorJson = new JSONObject(errorBody);
-                                if (errorJson.has("message")) {
-                                    Toast.makeText(SignupActivity.this, errorJson.getString("message"), Toast.LENGTH_SHORT).show();
-                                } else {
-                                    Toast.makeText(SignupActivity.this, "Registration Failed. Check your network and try again later." + error.networkResponse.statusCode, Toast.LENGTH_SHORT).show();
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                                Toast.makeText(SignupActivity.this, "Error parsing error response: " + errorBody, Toast.LENGTH_SHORT).show();
-
-                            }
-
-                        } else {
-                            Toast.makeText(SignupActivity.this, "Registration failed. Server did not return an error message.", Toast.LENGTH_SHORT).show();
-                        }
-
-
-
-
-                    } else {
-
-                        Toast.makeText(SignupActivity.this, "Registration failed. Check your network and try again later.", Toast.LENGTH_SHORT).show();
-
-                    }
-
-                }) {
-
-            @Override
-            public String getBodyContentType() {
-                return "application/json; charset=utf-8";
+                } else {
+                    // Handle error response
+                    String errorBody = response.body() != null ? response.body().string() : "Unknown error";
+                    Log.e("SignupError", "Response unsuccessful: " + response.code() + " - " + errorBody);
+                    runOnUiThread(() -> Toast.makeText(SignupActivity.this, "Error: " + response.code() + ". Please try again.", Toast.LENGTH_SHORT).show());
+                }
             }
+        });
+    }
 
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$";
+        Pattern pattern = Pattern.compile(emailRegex);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
 
-        };
-
-
-        requestQueue.add(jsonObjectRequest);
+    private boolean isValidPassword(String password) {
+        String passwordRegex = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        return password.matches(passwordRegex);
     }
 }

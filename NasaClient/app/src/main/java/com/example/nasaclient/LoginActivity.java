@@ -3,7 +3,6 @@ package com.example.nasaclient;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,28 +10,30 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private ApiService apiService;
+    private OkHttpClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // Initialize Retrofit with the updated base URL
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://boxgateway.kozow.com/") // API base URL
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        apiService = retrofit.create(ApiService.class);
+        // Initialize OkHttpClient
+        client = new OkHttpClient();
 
         // Retrieve Views from layout
         EditText emailEditText = findViewById(R.id.etEmail);
@@ -61,28 +62,58 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginUser(String email, String password) {
-        // Make login API call with email and password
-        Call<LoginResponse> call = apiService.login(new User(email, password));
-        call.enqueue(new Callback<LoginResponse>() {
-            @Override
-            public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-                if (response.isSuccessful() && response.body() != null) {
-                    String token = response.body().getToken(); // Get token from the response
-                    saveTokenToSharedPreferences(token); // Save token to SharedPreferences
+        // Create JSON body for the request
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("email", email);
+            jsonObject.put("password", password);
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return;
+        }
 
-                    Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
-                    // Redirect user to the main screen after successful login
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                } else {
-                    Toast.makeText(LoginActivity.this, "Login failed. Please check your credentials.", Toast.LENGTH_SHORT).show();
-                }
+        // Create request body with JSON content
+        RequestBody body = RequestBody.create(jsonObject.toString(), MediaType.parse("application/json; charset=utf-8"));
+
+        // Build the request
+        Request request = new Request.Builder()
+                .url("https://boxgateway.kozow.com/login") // Updated API endpoint
+                .post(body)
+                .build();
+
+        // Make asynchronous API call
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                // Handle request failure
+                runOnUiThread(() -> Toast.makeText(LoginActivity.this, "Connection error: " + e.getMessage(), Toast.LENGTH_SHORT).show());
             }
 
             @Override
-            public void onFailure(Call<LoginResponse> call, Throwable t) {
-                Toast.makeText(LoginActivity.this, "Connection error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    // Parse the JSON response
+                    String responseData = response.body().string();
+                    try {
+                        JSONObject jsonResponse = new JSONObject(responseData);
+                        String token = jsonResponse.getString("token"); // Retrieve the token
+
+                        // Save token to SharedPreferences
+                        saveTokenToSharedPreferences(token);
+
+                        runOnUiThread(() -> {
+                            Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
+                            // Redirect to MainActivity after successful login
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        });
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    runOnUiThread(() -> Toast.makeText(LoginActivity.this, "Login failed. Please check your credentials.", Toast.LENGTH_SHORT).show());
+                }
             }
         });
     }

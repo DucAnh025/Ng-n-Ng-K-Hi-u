@@ -9,10 +9,6 @@ public interface ApiService {
     @POST("register")
     Call<Void> registerUser(@Body User user);
 
-    @POST("/login")
-    Call<LoginResponse> login(@Body User user);
-
-
     @GET("api/news")
     Call<List<News>> getNews(); // Adjust `News` class as per your data model
 }

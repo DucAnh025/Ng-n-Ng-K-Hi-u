@@ -24,6 +24,9 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final TextInputLayout ConfirmPasswordLayout;
+
+  @NonNull
   public final ImageButton backButton;
 
   @NonNull
@@ -33,29 +36,35 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
   public final TextInputEditText confirmPassword;
 
   @NonNull
-  public final TextInputLayout confirmPasswordLayout;
-
-  @NonNull
   public final TextInputEditText newPassword;
 
   @NonNull
   public final TextInputLayout newPasswordLayout;
 
   @NonNull
+  public final TextInputEditText oldPassword;
+
+  @NonNull
+  public final TextInputLayout oldPasswordLayout;
+
+  @NonNull
   public final TextView titleText;
 
   private ActivityChangePasswordBinding(@NonNull LinearLayout rootView,
-      @NonNull ImageButton backButton, @NonNull Button btnSaveChanges,
-      @NonNull TextInputEditText confirmPassword, @NonNull TextInputLayout confirmPasswordLayout,
+      @NonNull TextInputLayout ConfirmPasswordLayout, @NonNull ImageButton backButton,
+      @NonNull Button btnSaveChanges, @NonNull TextInputEditText confirmPassword,
       @NonNull TextInputEditText newPassword, @NonNull TextInputLayout newPasswordLayout,
+      @NonNull TextInputEditText oldPassword, @NonNull TextInputLayout oldPasswordLayout,
       @NonNull TextView titleText) {
     this.rootView = rootView;
+    this.ConfirmPasswordLayout = ConfirmPasswordLayout;
     this.backButton = backButton;
     this.btnSaveChanges = btnSaveChanges;
     this.confirmPassword = confirmPassword;
-    this.confirmPasswordLayout = confirmPasswordLayout;
     this.newPassword = newPassword;
     this.newPasswordLayout = newPasswordLayout;
+    this.oldPassword = oldPassword;
+    this.oldPasswordLayout = oldPasswordLayout;
     this.titleText = titleText;
   }
 
@@ -86,6 +95,12 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.ConfirmPasswordLayout;
+      TextInputLayout ConfirmPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (ConfirmPasswordLayout == null) {
+        break missingId;
+      }
+
       id = R.id.backButton;
       ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
       if (backButton == null) {
@@ -104,12 +119,6 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.confirmPasswordLayout;
-      TextInputLayout confirmPasswordLayout = ViewBindings.findChildViewById(rootView, id);
-      if (confirmPasswordLayout == null) {
-        break missingId;
-      }
-
       id = R.id.newPassword;
       TextInputEditText newPassword = ViewBindings.findChildViewById(rootView, id);
       if (newPassword == null) {
@@ -122,14 +131,27 @@ public final class ActivityChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.oldPassword;
+      TextInputEditText oldPassword = ViewBindings.findChildViewById(rootView, id);
+      if (oldPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.oldPasswordLayout;
+      TextInputLayout oldPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (oldPasswordLayout == null) {
+        break missingId;
+      }
+
       id = R.id.titleText;
       TextView titleText = ViewBindings.findChildViewById(rootView, id);
       if (titleText == null) {
         break missingId;
       }
 
-      return new ActivityChangePasswordBinding((LinearLayout) rootView, backButton, btnSaveChanges,
-          confirmPassword, confirmPasswordLayout, newPassword, newPasswordLayout, titleText);
+      return new ActivityChangePasswordBinding((LinearLayout) rootView, ConfirmPasswordLayout,
+          backButton, btnSaveChanges, confirmPassword, newPassword, newPasswordLayout, oldPassword,
+          oldPasswordLayout, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

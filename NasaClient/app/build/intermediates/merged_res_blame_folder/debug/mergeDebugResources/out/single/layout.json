@@ -36,12 +36,12 @@
         "source": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_notification.xml",
-        "source": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_notification.xml"
-    },
-    {
         "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/item_slider.xml",
         "source": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/item_slider.xml"
+    },
+    {
+        "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_notification.xml",
+        "source": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_notification.xml"
     },
     {
         "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_main.xml",
@@ -50,10 +50,6 @@
     {
         "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_see_all.xml",
         "source": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/fragment_see_all.xml"
-    },
-    {
-        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/item_news.xml",
-        "source": "com.example.nasaclient.app-main-68:/layout/item_news.xml"
     },
     {
         "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/item_notification.xml",
@@ -90,6 +86,10 @@
     {
         "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_setting.xml",
         "source": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_setting.xml"
+    },
+    {
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/nav_header.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/nav_header.xml"
     },
     {
         "merged": "/Users/ducanh/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_legal_and_policies.xml",

@@ -1,9 +1,12 @@
 package com.example.nasaclient;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -17,10 +20,23 @@ import androidx.appcompat.widget.Toolbar;
 import com.example.nasaclient.databinding.ActivityWithNavBinding;
 import com.google.android.material.navigation.NavigationView;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 public class MainActivity extends AppCompatActivity {
     ActivityWithNavBinding binding;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
+    private OkHttpClient client;
+    private TextView tvFullName; // TextView to display the user's full name
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Set content for the HomeActivity
         getLayoutInflater().inflate(R.layout.activity_main, binding.container, true);
+
+        // Initialize OkHttpClient
+        client = new OkHttpClient();
 
         // Find and set up the Toolbar as the Support ActionBar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -47,8 +66,15 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().setHomeButtonEnabled(true);
         }
 
-        // Handle navigation item selections in the sidebar menu
+        // Set up NavigationView and get reference to header view
         NavigationView navigationView = findViewById(R.id.navigationView);
+        View headerView = navigationView.getHeaderView(0);
+        tvFullName = headerView.findViewById(R.id.tvFullName); // Assuming tvFullName is the TextView ID in nav_header
+
+        // Fetch user info when this activity loads
+        fetchUserInfo();
+
+        // Handle navigation item selections in the sidebar menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -76,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.home) {
-                // No need to navigate since we're already on this page
                 return true;
             } else if (itemId == R.id.planet) {
                 startActivity(new Intent(this, PlanetActivity.class));
@@ -92,14 +117,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set up button listeners for specific actions
-        Button btnback = findViewById(R.id.btnViewDetail);
-        btnback.setOnClickListener(view -> {
+        Button btnViewDetail = findViewById(R.id.btnViewDetail);
+        btnViewDetail.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, DetailFragment.class);
             startActivity(intent);
         });
 
-        ImageButton btnback_notif = findViewById(R.id.btnNotif_Main);
-        btnback_notif.setOnClickListener(view -> {
+        ImageButton btnNotifMain = findViewById(R.id.btnNotif_Main);
+        btnNotifMain.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, NotifMainFragment.class);
             startActivity(intent);
         });
@@ -111,9 +136,55 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void fetchUserInfo() {
+        // Retrieve token from SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+        String authToken = sharedPreferences.getString("auth_token", null);
+
+        if (authToken == null) {
+            Toast.makeText(this, "User not authenticated", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Build the request
+        Request request = new Request.Builder()
+                .url("https://boxgateway.kozow.com/get_user_info")
+                .get()
+                .addHeader("Authorization", "Bearer " + authToken)
+                .build();
+
+        // Make asynchronous API call
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                runOnUiThread(() -> Toast.makeText(MainActivity.this, "Failed to fetch user info", Toast.LENGTH_SHORT).show());
+                Log.e("UserInfoError", "Network error: " + e.getMessage());
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    String responseData = response.body().string();
+                    try {
+                        JSONObject jsonResponse = new JSONObject(responseData);
+                        String fullName = jsonResponse.getString("full_name");
+
+                        // Update UI on the main thread
+                        runOnUiThread(() -> tvFullName.setText(fullName));
+
+                    } catch (JSONException e) {
+                        Log.e("UserInfoError", "JSON parsing error: " + e.getMessage());
+                    }
+                } else {
+                    Log.e("UserInfoError", "Response unsuccessful: " + response.code());
+                    runOnUiThread(() -> Toast.makeText(MainActivity.this, "Failed to load user info", Toast.LENGTH_SHORT).show());
+                }
+            }
+        });
+    }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        // Open or close the sidebar menu when the menu button is tapped
         if (drawerToggle.onOptionsItemSelected(item)) {
             return true;
         }

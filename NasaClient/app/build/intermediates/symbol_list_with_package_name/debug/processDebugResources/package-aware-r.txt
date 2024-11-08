@@ -3218,6 +3218,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id ChangesServiceTerms
+id ConfirmPasswordLayout
 id FUNCTION
 id LegalAndPolicies
 id META
@@ -3365,7 +3366,6 @@ id collapseActionView
 id compose_view_saveable_id_tag
 id compress
 id confirmPassword
-id confirmPasswordLayout
 id confirm_button
 id constraint
 id consume_window_insets_tag
@@ -3623,6 +3623,8 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id oldPassword
+id oldPasswordLayout
 id on
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view
@@ -3807,6 +3809,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvForgotPassword
+id tvFullName
 id tvLoginSubtitle
 id tvLoginTitle
 id tvSignUp

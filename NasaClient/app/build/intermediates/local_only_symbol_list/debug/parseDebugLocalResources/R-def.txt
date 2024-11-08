@@ -74,6 +74,7 @@ drawable uranus
 drawable venus
 drawable white_button
 id ChangesServiceTerms
+id ConfirmPasswordLayout
 id LegalAndPolicies
 id Searchlanguage
 id Searchlanguagelayout
@@ -100,7 +101,6 @@ id btn_notification_setting
 id btn_save_changes
 id btn_security
 id confirmPassword
-id confirmPasswordLayout
 id container
 id createAccountButton
 id dateTextView
@@ -153,6 +153,8 @@ id news
 id notificationIcon
 id notificationTime
 id notificationTitle
+id oldPassword
+id oldPasswordLayout
 id planet
 id planetImage
 id planetImageView
@@ -176,6 +178,7 @@ id titleText
 id titleTextView
 id toolbar
 id tvForgotPassword
+id tvFullName
 id tvLoginSubtitle
 id tvLoginTitle
 id tvSignUp

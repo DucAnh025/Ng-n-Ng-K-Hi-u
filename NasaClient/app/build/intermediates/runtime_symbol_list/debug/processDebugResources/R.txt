@@ -3217,6 +3217,7 @@ int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
 int id ChangesServiceTerms 0x7f080004
+int id ConfirmPasswordLayout 0x7f08027b
 int id FUNCTION 0x7f080005
 int id LegalAndPolicies 0x7f080006
 int id META 0x7f080007
@@ -3364,7 +3365,6 @@ int id collapseActionView 0x7f080094
 int id compose_view_saveable_id_tag 0x7f080095
 int id compress 0x7f080096
 int id confirmPassword 0x7f080097
-int id confirmPasswordLayout 0x7f080098
 int id confirm_button 0x7f080099
 int id constraint 0x7f08009a
 int id consume_window_insets_tag 0x7f08009b
@@ -3622,6 +3622,8 @@ int id notification_background 0x7f08018a
 int id notification_main_column 0x7f08018b
 int id notification_main_column_container 0x7f08018c
 int id off 0x7f08018d
+int id oldPassword 0x7f08027c
+int id oldPasswordLayout 0x7f08027d
 int id on 0x7f08018e
 int id onInterceptTouchReturnSwipe 0x7f08018f
 int id open_search_bar_text_view 0x7f080190
@@ -3806,6 +3808,7 @@ int id transition_scene_layoutid_cache 0x7f080240
 int id transition_transform 0x7f080241
 int id triangle 0x7f080242
 int id tvForgotPassword 0x7f080243
+int id tvFullName 0x7f08027e
 int id tvLoginSubtitle 0x7f080244
 int id tvLoginTitle 0x7f080245
 int id tvSignUp 0x7f080246

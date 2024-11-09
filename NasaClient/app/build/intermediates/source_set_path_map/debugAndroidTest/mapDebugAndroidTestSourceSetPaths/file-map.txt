@@ -29,7 +29,7 @@ com.example.nasaclient.test.app-runtime-saveable-release-27 /Users/buiquangtrung
 com.example.nasaclient.test.app-ui-graphics-release-28 /Users/buiquangtrung/.gradle/caches/transforms-4/e67403112a454f4fb9498c70de77af3e/transformed/ui-graphics-release/res
 com.example.nasaclient.test.app-lifecycle-runtime-2.6.2-29 /Users/buiquangtrung/.gradle/caches/transforms-4/f28002cc7170cfbf5f2fb03bb87a25d6/transformed/lifecycle-runtime-2.6.2/res
 com.example.nasaclient.test.app-ui-test-junit4-release-30 /Users/buiquangtrung/.gradle/caches/transforms-4/f9e1be776ff5fb458653433ec6bb0592/transformed/ui-test-junit4-release/res
-com.example.nasaclient.test.app-androidTest-31 /Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/generated/res/resValues/androidTest/debug
-com.example.nasaclient.test.app-mergeDebugAndroidTestResources-32 /Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.nasaclient.test.app-mergeDebugAndroidTestResources-33 /Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.nasaclient.test.app-debugAndroidTest-34 /Users/buiquangtrung/Downloads/B3/Nasa-Client/NasaClient/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.example.nasaclient.test.app-androidTest-31 /Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/generated/res/resValues/androidTest/debug
+com.example.nasaclient.test.app-mergeDebugAndroidTestResources-32 /Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.nasaclient.test.app-mergeDebugAndroidTestResources-33 /Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.nasaclient.test.app-debugAndroidTest-34 /Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

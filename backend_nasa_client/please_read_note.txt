@@ -1,0 +1,9 @@
+# Our server use Flask as controller to build API endpoints
+# The database we used is MySQL Lite
+# The auth process between this server and the mobile app is by using JWT token
+# The server is deployed in our physical linux server at my home (I have config port forwarding, nginx, systemctl, gunicorn for load balancing and dynu as dynamic dns)
+# Domain: boxgateway.kozow.com
+
+# For news data:
+# Here we should get space news from an space organization or some where else
+# But here this just simulate the news data (stored it in json file) and it only response these whenever calling this endpoint (the data response will not change)

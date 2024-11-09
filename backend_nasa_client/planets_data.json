@@ -1,0 +1,218 @@
+[
+   {
+       "id": "earth",
+       "name": "Earth",
+       "description": "Earth is the third planet from the Sun and the only known celestial body to support life. With diverse ecosystems, it has a breathable atmosphere, abundant water, and a moderate climate, making it uniquely suited for complex organisms. Earth's surface features continents, oceans, and active geological processes like volcanism and tectonics.",
+       "related_news": [
+           {   "index": 0,
+               "title": "China to launch near-Earth asteroid sample return mission in 2025",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2020/08/ZhengHe-probe-2019-CNSA.jpg",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/china-to-launch-near-earth-asteroid-sample-return-mission-in-2025/",
+               "source": "Nature Daily"
+           },
+           {
+               "index": 1,
+               "title": "Earth observation companies wary of Starshield",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/09/starshield.jpg",
+               "date": "2024-10-23",
+               "link": "https://spacenews.com/earth-observation-companies-wary-of-starshield/",
+               "source": "Earth Watch"
+           },
+           {
+               "index": 2,
+               "title": "Infosys invests in Indian Earth-observation startup GalaxEye",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/09/rsz_2screenshot_2024-09-19_at_104715%E2%80%AFpm.png",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/infosys-invests-in-indian-earth-observation-startup-galaxeye/",
+               "source": "Earth Watch"
+           }
+       ]
+   },
+   {
+       "id": "mercury",
+       "name": "Mercury",
+       "description": "Mercury, the closest planet to the Sun, is a rocky, cratered world with extreme temperature swings. It lacks a substantial atmosphere, causing daytime temperatures to soar and nighttime temperatures to plummet. Mercury has no moons and completes an orbit around the Sun faster than any other planet, making it the speediest planet.",
+       "related_news": [
+           {   
+               "index": 0,
+               "title": "L3Harris taps Mercury Systems to supply solid-state data recorders for missile-warning satellites",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/04/rsz_1rsz_l3harris_sda_t2_tracking_v2.png",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/l3harris-taps-mercury-systems-to-supply-solid-state-data-recorders-for-missile-warning-satellites/",
+               "source": "Space Today"
+           },
+           {   
+               "index": 1,
+               "title": "Mapping the Sun’s Interaction with Mercury’s Surface",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/09/Mapping.png",
+               "date": "2024-10-23",
+               "link": "https://spacenews.com/mapping-the-suns-interaction-with-mercurys-surface/",
+               "source": "Space Today"
+           },
+           {   
+               "index": 2,
+               "title": "First BepiColombo Flyby of Mercury Finds Electron Rain Triggers X-Ray Auroras",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/07/Mercury-Xray-Auroras-Final.jpg",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/first-bepicolombo-flyby-of-mercury-finds-electron-rain-triggers-x-ray-auroras/",
+               "source": "Space Today"
+           }
+       ]
+   },
+   {
+       "id": "venus",
+       "name": "Venus",
+       "description": "Venus, often called Earth’s sister planet, is covered with dense clouds of toxic gases, causing a strong greenhouse effect. This results in searing surface temperatures and a landscape dominated by volcanoes and plains. Venus rotates slowly and in the opposite direction of most planets, contributing to its unique day-night cycle.",
+       "related_news": [
+           {
+               "index": 0,
+               "title": "Rocket Lab plans launch of Venus mission as soon as late 2024",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/10/rl-venus.jpg",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/rocket-lab-plans-late-2024-launch-of-venus-mission/",
+               "source": "Astronomy Now"
+           },
+           {
+               "index": 1,
+               "title": "Magellan Data Reveals Volcanic Activity on Venus",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/03/venus.png",
+               "date": "2024-10-23",
+               "link": "https://spacenews.com/magellan-data-reveals-volcanic-activity-on-venus/",
+               "source": "Astronomy Now"
+           },
+           {
+               "index": 2,
+               "title": "Study Finds Venus’ ‘Squishy’ Outer Shell May Be Resurfacing the Planet",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/02/venus-volcanoesjpg.jpg",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/study-finds-venus-squishy-outer-shell-may-be-resurfacing-the-planet/",
+               "source": "Astronomy Now"
+           }
+       ]
+   },
+   {
+       "id": "mars",
+       "name": "Mars",
+       "description": "Mars, known as the Red Planet due to its iron oxide-rich surface, has fascinating features like the tallest volcano and deepest canyon in the solar system. While its atmosphere is thin and cold, evidence suggests it once had liquid water. Mars continues to be a primary target for exploration in search of past or present life.",
+       "related_news": [
+           {
+               "index": 0,
+               "title": "NASA awards Rocket Lab study contract for Mars Sample Return",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/10/53194639182_f787a64a4e_o.jpg",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/nasa-awards-rocket-lab-study-contract-for-mars-sample-return/",
+               "source": "Space Journal"
+           },
+           {
+               "index": 1,
+               "title": "New Evidence of Water on Mars",
+               "image_url": "https://example.com/mars_news1.jpg",
+               "date": "2024-10-23",
+               "link": "https://example.com/mars1",
+               "source": "Space Journal"
+           },
+           {
+               "index": 2,
+               "title": "NASA charts path toward commercial services for Mars",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/09/This_mosaic_is_made_up_of_more_than_100_images_captured_by_NASAs_Viking_1_orbiter_which_operated_around_Mars_from_1976_to_1980._The_scar_across_the_center_of_the_planet_is_the_vast_Valles_Marineris.jpg",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/nasa-charts-path-toward-commercial-services-for-mars/",
+               "source": "Space Journal"
+           }
+       ]
+   },
+   {
+       "id": "saturn",
+       "name": "Saturn",
+       "description": "Saturn is famous for its extensive, icy ring system and is the second-largest planet in the solar system. This gas giant has a mostly hydrogen and helium atmosphere, with powerful storms and over 80 known moons, including Titan, which has lakes of methane. Its beauty and complexity make it a standout in our solar system.",
+       "related_news": [
+           {
+               "index": 0,
+               "title": "Hundred-year storms? That’s How Long They Last On Saturn",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/08/Low-Res_Saturn_storm_PIA12826.jpg",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/hundred-year-storms-thats-how-long-they-last-on-saturn/",
+               "source": "Universe Weekly"
+           },
+           {
+               "index": 1,
+               "title": "Webb Space Telescope Reveals Astonishing Saturn And Its Rings",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/06/JWST-NIRCam-Saturn-Color-Mapped-unannotated.png",
+               "date": "2024-10-23",
+               "link": "https://spacenews.com/webb-space-telescope-reveals-astonishing-saturn-and-its-rings/",
+               "source": "Universe Weekly"
+           },
+           {
+               "index": 2,
+               "title": "Hubble Finds Saturn’s Rings Heating Its Atmosphere",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/03/Screen-Shot-2023-03-30-at-5.57.34-PM.png",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/hubble-finds-saturns-rings-heating-its-atmosphere/",
+               "source": "Universe Weekly"
+           }
+       ]
+   },
+   {
+       "id": "uranus",
+       "name": "Uranus",
+       "description": "Uranus, the ice giant, has a pale blue color due to methane in its atmosphere. It orbits the Sun on its side, resulting in extreme seasonal variations. Known for its faint rings and frigid temperatures, Uranus is primarily composed of water, ammonia, and methane ice, distinguishing it from the gas giants.",
+       "related_news": [
+           {
+               "index": 0,
+               "title": "Hubble Monitors Weather On Jupiter And Uranus",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/03/unnamed-1-1.jpg",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/hubble-monitors-weather-on-jupiter-and-uranus/",
+               "source": "Planetary Science"
+           },
+           {
+               "index": 1,
+               "title": "First Observation Of A Polar Cyclone On Uranus",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/05/Screen-Shot-2023-05-23-at-10.47.10-AM.png",
+               "date": "2024-10-23",
+               "link": "https://spacenews.com/first-observation-of-a-polar-cyclone-on-uranus/",
+               "source": "Planetary Science"
+           },
+           {
+               "index": 2,
+               "title": "New Webb Telescope Image Of Uranus",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/04/Screen-Shot-2023-04-06-at-10.01.57-PM.png",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/new-webb-telescope-image-of-uranus/",
+               "source": "Planetary Science"
+           }
+       ]
+   },
+   {
+       "id": "neptune",
+       "name": "Neptune",
+       "description": "Neptune, the furthest planet from the Sun, is an intense blue due to atmospheric methane and exhibits the fastest winds in the solar system. It has a stormy atmosphere and faint rings. This ice giant is rich in hydrogen, helium, and methane, with a dynamic climate and a mysterious internal heat source.",
+       "related_news": [
+           {
+               "index": 0,
+               "title": "Neptune’s Disappearing Clouds Linked to the Solar Cycle",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/08/STScI-01H7DNR89838VMXVB31QQHAZVG.png",
+               "date": "2024-10-24",
+               "link": "https://spacenews.com/neptunes-disappearing-clouds-linked-to-the-solar-cycle/",
+               "source": "Astronomy Times"
+           },
+           {
+               "index": 1,
+               "title": "New Horizons Team Calls Amateur Astronomers To Augment Observations Of Uranus And Neptune",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/08/uranus2-low.jpg",
+               "date": "2024-10-23",
+               "link": "https://spacenews.com/new-horizons-team-calls-amateur-astronomers-to-augment-observations-of-uranus-and-neptune/",
+               "source": "Astronomy Times"
+           },
+           {
+               "index": 2,
+               "title": "Cruise Planners Reserves Two Capsules Aboard Space Perspective’s Spaceship Neptune In 2025",
+               "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2022/11/space_capsule.jpg",
+               "date": "2024-10-22",
+               "link": "https://spacenews.com/cruise-planners-reserves-two-capsules-aboard-space-perspectives-spaceship-neptune-in-2025/",
+               "source": "Astronomy Times"
+           }
+       ]
+   }
+]

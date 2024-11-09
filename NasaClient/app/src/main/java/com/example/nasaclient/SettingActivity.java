@@ -1,6 +1,7 @@
 package com.example.nasaclient;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -141,9 +142,18 @@ public class SettingActivity extends FragmentActivity {
 
             @Override
             public void onClick(View view) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(SettingActivity.this,LoginActivity.class);
+                // Remove auth token from SharedPreferences
+                SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.remove("auth_token"); // Remove the auth token
+                editor.apply();
+
+                // Redirect to LoginActivity
+                Intent intent = new Intent(SettingActivity.this, LoginActivity.class);
+                // Clear the back stack so user can't go back after logout
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+                finish(); // Close the SettingActivity
             }
         });
     }

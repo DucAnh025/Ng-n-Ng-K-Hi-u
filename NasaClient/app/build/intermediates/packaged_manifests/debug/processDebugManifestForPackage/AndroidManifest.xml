@@ -10,6 +10,8 @@
 
     <!-- Thêm quyền truy cập Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <permission
         android:name="com.example.nasaclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"

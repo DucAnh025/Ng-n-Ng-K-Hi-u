@@ -1,6 +1,7 @@
 package com.example.nasaclient;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -33,6 +34,17 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
+        // Check for existing auth token before setting content view
+        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+        String authToken = sharedPreferences.getString("auth_token", null);
+
+        // If auth token exists, redirect to MainActivity
+        if (authToken != null) {
+            Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish(); // Close LoginActivity so user can't go back to it
+            return; // Exit onCreate to prevent setting up login UI
+        }
         setContentView(binding.getRoot());
 
         // Initialize OkHttpClient

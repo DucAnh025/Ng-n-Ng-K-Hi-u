@@ -30,6 +30,18 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Check for existing auth token before setting content view
+        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+        String authToken = sharedPreferences.getString("auth_token", null);
+
+        // If auth token exists, redirect to MainActivity
+        if (authToken != null) {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish(); // Close LoginActivity so user can't go back to it
+            return; // Exit onCreate to prevent setting up login UI
+        }
         setContentView(R.layout.activity_login);
 
         // Initialize OkHttpClient

@@ -25,18 +25,6 @@
             android:textSize="20sp"
             android:textStyle="bold"
             tools:ignore="HardcodedText" />
-        <EditText
-            android:id="@+id/etSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/rounded_edittext"
-            android:drawableStart="@drawable/ic_search"
-            android:hint="Find the planet..."
-            android:padding="16dp"
-            android:layout_marginBottom="10dp"/>
 
         <!-- Earth Card -->
         <androidx.cardview.widget.CardView

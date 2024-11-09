@@ -64,8 +64,7 @@ public class ChangePasswordActivity extends ComponentActivity {
 
         // Set up click listener for back button
         btnBack.setOnClickListener(view -> {
-            Intent intent = new Intent(ChangePasswordActivity.this, SettingActivity.class);
-            startActivity(intent);
+            finish();
         });
     }
 

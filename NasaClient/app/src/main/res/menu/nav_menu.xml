@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/nav_voucher"
-        android:icon="@drawable/ic_language"
+        android:icon="@drawable/ic_edit_profile"
         android:title="Profile">
 
     </item>
 
     <item
         android:id="@+id/nav_chat"
-        android:icon="@drawable/ic_language"
+        android:icon="@drawable/ic_notif"
         android:title="Notification">
 
     </item>
 
     <item
         android:id="@+id/nav_history"
-        android:icon="@drawable/ic_language"
-        android:title="Password">
+        android:icon="@drawable/ic_changepassword"
+        android:title=" Change Password">
     </item>
 
     <item

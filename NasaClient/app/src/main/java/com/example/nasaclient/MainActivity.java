@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.nasaclient.databinding.ActivityWithNavBinding;
 import com.google.android.material.navigation.NavigationView;
 
@@ -84,17 +85,27 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.nav_voucher) {
-                    Toast.makeText(MainActivity.this, "Voucher selected", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, EditProfileActivity.class));
                 } else if (id == R.id.nav_chat) {
-                    Toast.makeText(MainActivity.this, "Chat selected", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, NotificationActivity.class));
                 } else if (id == R.id.nav_history) {
-                    Toast.makeText(MainActivity.this, "History selected", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, ChangePasswordActivity.class));
                 } else if (id == R.id.nav_settings) {
                     startActivity(new Intent(MainActivity.this, SettingActivity.class));
                 } else if (id == R.id.nav_help) {
-                    Toast.makeText(MainActivity.this, "Help selected", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, HelpAndSupportActivity.class));
                 } else if (id == R.id.nav_logout) {
-                    Toast.makeText(MainActivity.this, "Logout selected", Toast.LENGTH_SHORT).show();
+                    SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.remove("auth_token"); // Remove the auth token
+                    editor.apply();
+
+                    // Redirect to LoginActivity
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    // Clear the back stack so user can't go back after logout
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish(); // Close the SettingActivity                    Toast.makeText(MainActivity.this, "Logout selected", Toast.LENGTH_SHORT).show();
                 }
                 drawerLayout.closeDrawers();
                 return true;
@@ -180,7 +191,9 @@ public class MainActivity extends AppCompatActivity {
                                 .load(imageUrl)
                                 .placeholder(R.drawable.circle_background_01) // Placeholder
                                 .error(R.drawable.circle_background_01)       // Error
-                                .apply(RequestOptions.circleCropTransform()) // Radius in pixels
+                                .apply(RequestOptions.circleCropTransform())
+                                .skipMemoryCache(true) // Skip memory cache
+                                .diskCacheStrategy(DiskCacheStrategy.NONE)// Radius in pixels
                                 .into(profileImage);
                     }
 

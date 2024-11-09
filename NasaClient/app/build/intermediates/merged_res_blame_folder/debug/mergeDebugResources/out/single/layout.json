@@ -1,110 +1,106 @@
 [
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_notif_main.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/fragment_notif_main.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_notification.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_notification.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/nav_header.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/nav_header.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_main.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_see_all.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/fragment_see_all.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_notif_main.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/fragment_notif_main.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_planets.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_planets.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/badge_layout.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/badge_layout.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_signup.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_signup.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_signup.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_signup.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_help_and_support.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_help_and_support.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/item_slider.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/item_slider.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_legal_and_policies.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_legal_and_policies.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_see_all.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/fragment_see_all.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_notification.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_notification.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_login.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_news.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_news.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_news.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_news.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/item_news.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/item_news.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/item_notification.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/item_notification.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/item_event.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/item_event.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_help_and_support.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_help_and_support.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/badge_layout.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/badge_layout.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_notification_setting.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_notification_setting.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_with_nav.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_with_nav.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_onboarding01.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_onboarding01.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/item_slider.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/item_slider.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_change_password.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_change_password.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_setting.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_setting.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_language.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_language.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_change_password.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_change_password.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_legal_and_policies.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_legal_and_policies.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_security.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_security.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/item_news.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/item_news.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_edit_profile.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_edit_profile.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_planet_info.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_planet_info.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_detail.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/fragment_detail.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_setting.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_setting.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_onboarding01.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_onboarding01.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_security.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_security.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_language.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_language.xml"
-    },
-    {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_planet_info.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_planet_info.xml"
-    },
-    {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_main.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_main.xml"
-    },
-    {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/item_notification.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/item_notification.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/item_event.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/item_event.xml"
     },
     {
         "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_edit_profile.xml",
         "source": "com.example.nasaclient.app-main-68:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_notification_setting.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_notification_setting.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_with_nav.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_with_nav.xml"
     },
     {
-        "merged": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_login.xml",
-        "source": "/Users/buiquangtrung/.gradle/daemon/8.7/com.example.nasaclient.app-main-68:/layout/activity_login.xml"
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/nav_header.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/activity_planets.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/activity_planets.xml"
+    },
+    {
+        "merged": "com.example.nasaclient.app-mergeDebugResources-65:/layout/fragment_detail.xml",
+        "source": "com.example.nasaclient.app-main-68:/layout/fragment_detail.xml"
     }
 ]

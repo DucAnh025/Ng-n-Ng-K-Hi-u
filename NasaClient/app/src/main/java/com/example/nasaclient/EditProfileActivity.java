@@ -128,8 +128,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
 
         backButton.setOnClickListener(v -> {
-            Intent intent = new Intent(EditProfileActivity.this, SettingActivity.class);
-            startActivity(intent);
+            finish();
         });
 
 

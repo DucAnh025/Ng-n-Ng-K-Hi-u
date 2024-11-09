@@ -23,8 +23,7 @@ public class NotificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(NotificationActivity.this,SettingActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

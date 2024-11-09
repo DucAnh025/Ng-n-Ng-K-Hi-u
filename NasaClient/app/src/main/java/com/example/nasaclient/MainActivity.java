@@ -30,14 +30,17 @@ import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners; // For rounded corners
+import com.bumptech.glide.request.RequestOptions;
+import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     ActivityWithNavBinding binding;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private OkHttpClient client;
     private TextView tvFullName; // TextView to display the user's full name
-
+    private ImageView profileImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
         // Set up NavigationView and get reference to header view
         NavigationView navigationView = findViewById(R.id.navigationView);
         View headerView = navigationView.getHeaderView(0);
-        tvFullName = headerView.findViewById(R.id.tvFullName); // Assuming tvFullName is the TextView ID in nav_header
+        tvFullName = headerView.findViewById(R.id.tvFullName);
+        profileImage = headerView.findViewById(R.id.profile_image);// Assuming tvFullName is the TextView ID in nav_header
 
         // Fetch user info when this activity loads
         fetchUserInfo();
@@ -168,9 +172,19 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonResponse = new JSONObject(responseData);
                         String fullName = jsonResponse.getString("full_name");
-
+                        String imageUrl = jsonResponse.getString("image_url");
                         // Update UI on the main thread
-                        runOnUiThread(() -> tvFullName.setText(fullName));
+                        runOnUiThread(() -> {
+                        tvFullName.setText(fullName);
+                        Glide.with(MainActivity.this)
+                                .load(imageUrl)
+                                .placeholder(R.drawable.circle_background_01) // Placeholder
+                                .error(R.drawable.circle_background_01)       // Error
+                                .apply(RequestOptions.circleCropTransform()) // Radius in pixels
+                                .into(profileImage);
+                    }
+
+                        );
 
                     } catch (JSONException e) {
                         Log.e("UserInfoError", "JSON parsing error: " + e.getMessage());

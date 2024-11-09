@@ -73,11 +73,18 @@ public class EditProfileActivity extends AppCompatActivity {
                     if (data != null && data.getData() != null) {
                         selectedImageUri = data.getData();
                         try {
-                            // Use ContentResolver for efficiency
-                            profileImage.setImageURI(selectedImageUri);
-                        } catch (SecurityException e) {  // Handle potential exceptions
+                            // Use Glide to load and display the selected image
+                            Glide.with(EditProfileActivity.this)
+                                    .load(selectedImageUri)
+                                    .apply(RequestOptions.circleCropTransform())
+                                    .placeholder(R.drawable.ic_profile_placeholder)
+                                    .error(R.drawable.ic_profile_placeholder)
+                                    .skipMemoryCache(true)
+                                    .diskCacheStrategy(DiskCacheStrategy.NONE)
+                                    .into(profileImage);
+                        } catch (SecurityException e) {
                             e.printStackTrace();
-                            Toast.makeText(this, "Error loading image", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditProfileActivity.this, "Error loading image", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }

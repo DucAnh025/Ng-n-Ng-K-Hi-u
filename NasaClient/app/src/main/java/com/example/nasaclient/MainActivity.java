@@ -121,8 +121,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (itemId == R.id.planet) {
                 startActivity(new Intent(this, PlanetActivity.class));
                 return true;
-            } else if (itemId == R.id.news) {
-                startActivity(new Intent(this, NewsActivity.class));
+            } else if (itemId == R.id.practice) {
+                startActivity(new Intent(this, PracticeActivity.class));
                 return true;
             } else if (itemId == R.id.setting) {
                 startActivity(new Intent(this, SettingActivity.class));

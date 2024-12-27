@@ -20,8 +20,7 @@ public class SettingActivity extends FragmentActivity {
 
         // Set content for the HomeActivity
         getLayoutInflater().inflate(R.layout.activity_setting, binding.container, true);
-        binding.bottomNavigationView.setSelectedItemId(R.id.setting);
-        // Setup bottom navigation
+        binding.bottomNavigationView.setSelectedItemId(R.id.practice);
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.home) {
@@ -30,8 +29,8 @@ public class SettingActivity extends FragmentActivity {
             } else if (itemId == R.id.planet) {
                 startActivity(new Intent(this, PlanetActivity.class));
                 return true;
-            } else if (itemId == R.id.news) {
-                startActivity(new Intent(this, NewsActivity.class));
+            } else if (itemId == R.id.practice) {
+                startActivity(new Intent(this, PracticeActivity.class));
                 return true;
             } else if (itemId == R.id.setting) {
                 startActivity(new Intent(this, SettingActivity.class));

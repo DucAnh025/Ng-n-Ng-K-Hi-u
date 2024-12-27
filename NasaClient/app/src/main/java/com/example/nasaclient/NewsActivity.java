@@ -60,23 +60,6 @@ public class NewsActivity extends FragmentActivity {
 
         fetchNewsData();
 
-        binding.bottomNavigationView.setSelectedItemId(R.id.news);
-        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            int itemId = item.getItemId();
-            if (itemId == R.id.home) {
-                startActivity(new Intent(this, MainActivity.class));
-                return true;
-            } else if (itemId == R.id.planet) {
-                startActivity(new Intent(this, PlanetActivity.class));
-                return true;
-            } else if (itemId == R.id.news) {
-                return true;
-            } else if (itemId == R.id.setting) {
-                startActivity(new Intent(this, SettingActivity.class));
-                return true;
-            }
-            return false;
-        });
     }
 
     private void fetchNewsData() {

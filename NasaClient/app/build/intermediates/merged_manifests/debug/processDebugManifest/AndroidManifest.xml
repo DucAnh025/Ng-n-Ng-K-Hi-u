@@ -8,10 +8,26 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
-    <!-- Thêm quyền truy cập Internet -->
+    <!-- Quyền cần thiết -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Camera features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+    </queries>
 
     <permission
         android:name="com.example.nasaclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -28,48 +44,14 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.NasaClient"
         android:usesCleartextTraffic="true" >
-        <activity
-            android:name="com.example.nasaclient.PlanetInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.HelpAndSupportActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.LegalAndPoliciesActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.LanguageActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.SecurityActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.NotificationActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.NotificationSettingActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.PlanetActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.nasaclient.SettingActivity"
-            android:exported="false"
-            android:label="Setting"
-            android:theme="@style/Theme.NasaClient" />
-        <activity
-            android:name="com.example.nasaclient.NewsActivity"
-            android:exported="false"
-            android:label="News"
-            android:theme="@style/Theme.NasaClient" />
+
+        <!-- Main Activity -->
         <activity
             android:name="com.example.nasaclient.OnBoardingActivity"
             android:exported="true"
@@ -81,41 +63,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Các Activity khác -->
+        <activity
+            android:name="com.example.nasaclient.MainActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.nasaclient.LoginActivity"
-            android:exported="false"
-            android:label="Login"
-            android:theme="@style/Theme.NasaClient" />
-        <activity
-            android:name="com.example.nasaclient.EditProfileActivity"
-            android:exported="false"
-            android:label="Edit Profile"
-            android:theme="@style/Theme.NasaClient" />
-        <activity
-            android:name="com.example.nasaclient.ChangePasswordActivity"
-            android:exported="false"
-            android:label="Change Password"
-            android:theme="@style/Theme.NasaClient" />
+            android:exported="false" />
         <activity
             android:name="com.example.nasaclient.SignupActivity"
-            android:exported="false"
-            android:label="Sign Up"
-            android:theme="@style/Theme.NasaClient" />
+            android:exported="false" />
         <activity
-            android:name="com.example.nasaclient.DetailFragment"
-            android:exported="false"
-            android:label="Change"
-            android:theme="@style/Theme.NasaClient" />
+            android:name="com.example.nasaclient.SettingActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.nasaclient.NotifMainFragment"
-            android:exported="false"
-            android:label="Notif"
-            android:theme="@style/Theme.NasaClient" />
+            android:name="com.example.nasaclient.ChangePasswordActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.nasaclient.SeeAllFragment"
-            android:exported="false"
-            android:label="Change"
-            android:theme="@style/Theme.NasaClient" />
+            android:name="com.example.nasaclient.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.PracticeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.HelpAndSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nasaclient.PlanetActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />

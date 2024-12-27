@@ -4,6 +4,7 @@ package com.example.nasaclient.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,14 +22,18 @@ public final class ActivityNewsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageButton backButton;
+
+  @NonNull
   public final RecyclerView recyclerView;
 
   @NonNull
   public final TextView titleText;
 
-  private ActivityNewsBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView recyclerView,
-      @NonNull TextView titleText) {
+  private ActivityNewsBinding(@NonNull LinearLayout rootView, @NonNull ImageButton backButton,
+      @NonNull RecyclerView recyclerView, @NonNull TextView titleText) {
     this.rootView = rootView;
+    this.backButton = backButton;
     this.recyclerView = recyclerView;
     this.titleText = titleText;
   }
@@ -60,6 +65,12 @@ public final class ActivityNewsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
@@ -72,7 +83,7 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewsBinding((LinearLayout) rootView, recyclerView, titleText);
+      return new ActivityNewsBinding((LinearLayout) rootView, backButton, recyclerView, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

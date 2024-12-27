@@ -1,11 +1,11 @@
-#Sat Nov 09 15:01:24 ICT 2024
-base.0=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.3=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.4=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
-base.5=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.6=/Users/buiquangtrung/Downloads/B3/mobile_newest_2/Nasa-Client/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Fri Dec 27 09:47:37 ICT 2024
+base.0=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.3=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
+base.4=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
+base.5=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.6=/Users/ducanh/StudioProjects/Sign App/NasaClient/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

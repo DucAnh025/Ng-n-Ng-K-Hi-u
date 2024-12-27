@@ -108,13 +108,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="280dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/pictureoftheday"
+                            android:src="@drawable/tl_001"
                             android:contentDescription="Picture of the Day" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Picture of the Day"
+                            android:text="Từ vựng ngày hôm nay"
                             android:textColor="@android:color/white"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -123,7 +123,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NASA will “lead the emplacement of capabilities that support lunar missions beyond cislunar space.”"
+                            android:text="Ngôn ngữ ký hiệu hay ngôn ngữ dấu hiệu, thủ ngữ là ngôn ngữ dùng những biểu hiện của bàn tay thay cho âm thanh của tiếng nói."
                             android:textColor="#CCCCCC"
                             android:textSize="14sp"
                             android:layout_marginStart="16dp"
@@ -136,7 +136,7 @@
                             android:layout_height="40dp"
                             android:layout_margin="16dp"
                             android:background="@drawable/rounded_button_black"
-                            android:text="View Detail"
+                            android:text="Chi Tiết"
                             app:cornerRadius="24dp"
                             android:textColor="@android:color/white"
                             android:textSize="12dp" />
@@ -152,7 +152,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Other Pictures"
+                        android:text="Các từ khác"
                         android:textColor="@android:color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -165,7 +165,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="1dp"
                         android:backgroundTint="@android:color/white"
-                        android:text="See All"
+                        android:text="Tất cả"
                         android:textColor="#000000"
                         android:textSize="13dp" />
                 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.fragment.app.FragmentActivity;
 import com.example.nasaclient.databinding.ActivityWithNavBinding;
 
+
 public class PlanetActivity extends FragmentActivity {
     private static final String TAG = "PlanetActivity";
     ActivityWithNavBinding binding;
@@ -19,18 +20,17 @@ public class PlanetActivity extends FragmentActivity {
         setContentView(binding.getRoot());
 
         getLayoutInflater().inflate(R.layout.activity_planets, binding.container, true);
-        binding.bottomNavigationView.setSelectedItemId(R.id.planet);
-
+        // Setup bottom navigation
+        binding.bottomNavigationView.setSelectedItemId(R.id.home);
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.home) {
-                startActivity(new Intent(this, MainActivity.class));
                 return true;
             } else if (itemId == R.id.planet) {
-
+                startActivity(new Intent(this, PlanetActivity.class));
                 return true;
-            } else if (itemId == R.id.news) {
-                startActivity(new Intent(this, NewsActivity.class));
+            } else if (itemId == R.id.practice) {
+                startActivity(new Intent(this, PracticeActivity.class));
                 return true;
             } else if (itemId == R.id.setting) {
                 startActivity(new Intent(this, SettingActivity.class));

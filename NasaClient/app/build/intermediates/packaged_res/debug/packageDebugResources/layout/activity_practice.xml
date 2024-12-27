@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PracticeActivity">
+
+    <!-- Container for Camera Preview -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cameraContainer"
+        android:layout_width="0dp"
+        android:layout_height="690dp"
+        android:layout_margin="18dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvCaption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Camera Preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Mute Button -->
+    <ImageView
+        android:id="@+id/btnFlash"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_flash_off"
+        app:tint="@android:color/black"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/cameraContainer"
+        app:layout_constraintStart_toStartOf="@id/cameraContainer" />
+
+    <ImageView
+        android:id="@+id/btnCapture"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_photo_camera"
+        app:tint="@android:color/black"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/cameraContainer"
+        app:layout_constraintStart_toEndOf="@id/btnFlash"
+        app:layout_constraintEnd_toStartOf="@id/btnCameraFlip" />
+
+    <!-- Capture Button -->
+    <ImageView
+        android:id="@+id/btnCameraFlip"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_cameraswitch"
+        app:tint="@android:color/black"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/cameraContainer"
+        app:layout_constraintEnd_toEndOf="@id/cameraContainer" />
+
+    <!-- Caption Text -->
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="18dp"
+        android:text="This is the meaning of the hand sign"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cameraContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,11 +22,13 @@ drawable earth
 drawable error_image
 drawable ic_arrow_left
 drawable ic_arrow_right
+drawable ic_cameraswitch
 drawable ic_changepassword
 drawable ic_circle_notif
 drawable ic_drawer
 drawable ic_edit_profile
 drawable ic_email
+drawable ic_flash_off
 drawable ic_google
 drawable ic_help
 drawable ic_home
@@ -45,6 +47,7 @@ drawable ic_notifsetting
 drawable ic_password
 drawable ic_person
 drawable ic_phone
+drawable ic_photo_camera
 drawable ic_planets
 drawable ic_profile
 drawable ic_profile_placeholder
@@ -69,7 +72,13 @@ drawable rounded_image_background
 drawable saturn
 drawable search_background
 drawable square_button
+drawable tl_001
+drawable tl_002
+drawable tl_01
+drawable tl_02
+drawable tl_03
 drawable transparent_button_background
+drawable transparent_text_bg
 drawable uranus
 drawable venus
 drawable white_button
@@ -82,6 +91,9 @@ id Term
 id alreadyHaveAccountText
 id backButton
 id bottomNavigationView
+id btnCameraFlip
+id btnCapture
+id btnFlash
 id btnNotif_Main
 id btnSeeAll
 id btnSignIn
@@ -100,6 +112,8 @@ id btn_notification
 id btn_notification_setting
 id btn_save_changes
 id btn_security
+id cameraContainer
+id cameraPreview
 id confirmPassword
 id container
 id createAccountButton
@@ -117,6 +131,7 @@ id etEmail
 id etFullName
 id etPassword
 id etPasswordLayout
+id etSearch
 id etSearch01
 id et_email
 id et_full_name
@@ -148,7 +163,6 @@ id neptuneImage
 id neptuneTitleText
 id newPassword
 id newPasswordLayout
-id news
 id notificationIcon
 id notificationTime
 id notificationTitle
@@ -159,6 +173,7 @@ id planetImage
 id planetImageView
 id planetInfoTextView
 id planetNameTextView
+id practice
 id profile_image
 id recyclerView
 id saturnExploreButton
@@ -176,6 +191,7 @@ id titleSeeAll
 id titleText
 id titleTextView
 id toolbar
+id tvCaption
 id tvForgotPassword
 id tvFullName
 id tvLoginSubtitle
@@ -202,6 +218,7 @@ layout activity_notification_setting
 layout activity_onboarding01
 layout activity_planet_info
 layout activity_planets
+layout activity_practice
 layout activity_security
 layout activity_setting
 layout activity_signup

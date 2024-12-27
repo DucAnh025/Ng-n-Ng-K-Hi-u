@@ -3,13 +3,13 @@
     <item android:title="Home"
         android:icon="@drawable/ic_home"
         android:id="@+id/home"/>
-    <item android:title="Planets"
+    <item android:title="Tài Liệu"
         android:icon="@drawable/ic_planets"
         android:id="@+id/planet"/>
-    <item android:title="News"
+    <item android:title="Phiên Dich"
         android:icon="@drawable/ic_news"
-        android:id="@+id/news"/>
-    <item android:title="Settings"
+        android:id="@+id/practice"/>
+    <item android:title="Cài Đặt"
         android:icon="@drawable/ic_settings"
         android:id="@+id/setting"/>
 </menu>

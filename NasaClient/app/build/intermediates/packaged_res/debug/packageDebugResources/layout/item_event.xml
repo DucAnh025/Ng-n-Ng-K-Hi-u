@@ -20,7 +20,7 @@
             android:layout_height="114dp"
             android:contentDescription="Event image"
             android:scaleType="centerCrop"
-            android:src="@drawable/bg02" />
+            android:src="@drawable/tl_002" />
 
         <TextView
             android:id="@+id/eventDate"
@@ -42,7 +42,7 @@
             android:layout_marginBottom="12dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text=" Returning US astronauts to the Moon"
+            android:text="Ngôn ngữ ký hiệu do người điếc tạo ra nhằm"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="bold" />

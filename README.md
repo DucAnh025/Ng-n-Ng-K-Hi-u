@@ -1,4 +1,4 @@
-# NASA Client - Mobile Application Development Project
+# Ngôn Ngữ Ký Hiệu - Mobile Application Development Project
 
 ### Group ID: 04
 
